@@ -13,8 +13,9 @@ input {outline: 0 !important;}
 /* navigation */
 
 .navigation{
-    width: 100%;
-    padding-top: 12px;
+    width: 88.88889%;
+    padding: 13px 5.555555%;
+    border-bottom: solid #141313 1px;
     position: absolute;
     z-index: 10;
 }
@@ -37,6 +38,7 @@ input {outline: 0 !important;}
 .inputSearch{
     border: none;
     user-select: text;
+    background-color: transparent;
 }
 .iconSearch{
     height: 24px;
@@ -47,25 +49,41 @@ input {outline: 0 !important;}
     height: 36px;
 }
 
+.iconbasketAndLike{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 78px;
+    margin-left: 124px;
+    height: 32px;
+}
+.iconBasket, .iconLike{
+    height: 24px;
+}
+
 .otherPages{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 16px;
+}
+.otherPages a{
+    text-decoration: none;
+    color: #141313;
+    font-size: 18px;
+    font-family: "Montserrat";
 }
 
 
-/* Main page */
 
+/* Main page */
+    /* Header */
 .header{
     height: 100vh;
     width: 100%;
 }
-
 .headerBg{
     height: 100%;
-    background-image: url("/img/mainPage.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("../img/mainPage/mainPage.png") no-repeat top;
     background-size: cover;
 }
-
