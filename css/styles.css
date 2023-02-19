@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Kharkiw Tone';
-    src: url('/fonts/Kharkiv Tone.ttf') format("truetype");
+    src: url('fonts/Kharkiv Tone.ttf') format("truetype");
 }
 
 *{
