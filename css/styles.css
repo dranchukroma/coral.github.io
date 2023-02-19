@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Kharkiw Tone';
+    src: url('/fonts/Kharkiv\ Tone.ttf') format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input {outline: 0 !important;}
+
+/* navigation */
+
+.navigation{
+    width: 100%;
+    padding-top: 12px;
+    position: absolute;
+    z-index: 10;
+}
+
+.helpInformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 36px;
+}
+
+.searchElements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 202px;
+    height: 32px;
+    border-bottom: 1px solid #141313;
+}
+.inputSearch{
+    border: none;
+    user-select: text;
+}
+.iconSearch{
+    height: 24px;
+}
+
+.LOGO, .nameOfShop{
+    width: 145px;
+    height: 36px;
+}
+
+.otherPages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* Main page */
+
+.header{
+    height: 100vh;
+    width: 100%;
+}
+
+.headerBg{
+    height: 100%;
+    background-image: url("/img/mainPage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
