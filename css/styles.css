@@ -1,11 +1,16 @@
 @font-face {
     font-family: 'Kharkiw Tone';
-    src: url('fonts/Kharkiv Tone.ttf') format("truetype");
+    src: url('../fonts/Kharkiv%20Tone.ttf') format("truetype");
 }
 
 *{
     margin: 0;
     padding: 0;
+}
+.container{
+    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 input {outline: 0 !important;}
@@ -86,4 +91,47 @@ input {outline: 0 !important;}
     height: 100%;
     background: url("../img/mainPage/mainPage.png") no-repeat top;
     background-size: cover;
+}
+    /* Section */
+
+.wrapToHimHerImg{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-between;
+}
+.similarImg{
+    width: 705px;
+    height: 768px;
+    background: no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.forHer{
+    background: url("../img/mainPage/forHer.png");
+}
+.forHim{
+    background: url("../img/mainPage/forHim.png");
+}
+.forThem{
+    width: 100%;
+    height: 566px;
+    background: url("../img/mainPage/forThem.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.forWho-text{
+    font-size: 24px;
+    color: white;
+    font-family: 'Kharkiw Tone';
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+    /* Recommended */
+.headerWrapper{
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    text-align: center;
+    margin: 113px auto 50px auto;
 }
