@@ -129,9 +129,52 @@ input {outline: 0 !important;}
 }
 
     /* Recommended */
-.headerWrapper{
+.recomendedWrapper{
     font-size: 32px;
     font-family: 'Kharkiw Tone';
     text-align: center;
     margin: 113px auto 50px auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 407px;
+}
+.cardImg{
+    height: 508px;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+.cardImg-1{
+    background: url("../img/mainPage/1stCardImg.png") no-repeat center;
+}
+.cardImg-2{
+    background: url("../img/mainPage/2ndCardImg.png") no-repeat center;
+}
+.cardImg-3{
+    background: url("../img/mainPage/3rdCardImg.png") no-repeat center;
+}
+
+.cardName{
+    margin-bottom: 16px;
+}
+.cardName, .cardPrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 45px;
 }
