@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="nameOfShop" id="js-nameOfShop">
-                <a href="" class="nameOfShop">
+                <a href="#js-header" class="nameOfShop">
                     <div class="nameOfShopButton" id="js-nameOfShopButton">
                         <div class="LOGO">
                             <img src="img/LOGO.png" alt="">
@@ -39,10 +39,8 @@
             <div class="basketAndLike" id="js-basketAndLike">
                 <div class="iconbasketAndLike">
                     <div class="iconLike">
-                        <img src="img/icons/like.png" width="24px" height="24px" alt="">
                     </div>
                     <div class="iconBasket">
-                        <img src="img/icons/basket.png" width="24px" height="24px" alt="">
                     </div>
                 </div>
             </div>
@@ -82,25 +80,26 @@
         </header>
 
     <div class="container">
-        <section class="forWho" id="js-forWho">
+        <section class="people" id="js-people">
             <div class="wrapToHimHerImg">
                 <div class="similarImg forHer">
-                    <div class="forWho-text">
+                    <div class="people-text">
                         <p>For her</p>
                     </div>
                 </div>
                 <div class="similarImg forHim">
-                    <div class="forWho-text">
+                    <div class="people-text">
                         <p>For him</p>
                     </div>
                 </div>
             </div>
             <div class="forThem">
-                <div class="forWho-text">
+                <div class="people-text">
                     <p>For Them</p>
                 </div>
             </div>
         </section>
+
         <section class="recommended" id="js-recommended">
             <div class="recomendedWrapper">
                 <h3 class="recommendedSectionHeader">Recommended</h3>
@@ -109,11 +108,16 @@
                 <div class="cards">
                     <div class="card">
                         <div class="cardElementsWrapper">
-                            <div class="cardImg cardImg-1">
+                            <div on class="cardImg cardImg-1">
+                                <div class="cardHover" style="opacity: 0;">
+                                    <div class="sizes">
+                                        S M L
+                                    </div>
+                                </div>
                             </div>
                             <div class="cardName">
                                 <div class="productName">
-                                    <p>
+                                    <p> 
                                         Tops and bike shorts
                                     </p>
                                 </div>
@@ -136,6 +140,11 @@
                     <div class="card">
                         <div class="cardElementsWrapper">
                             <div class="cardImg cardImg-2">
+                                <div class="cardHover" style="opacity: 0;">
+                                    <div class="sizes">
+                                        M L
+                                    </div>
+                                </div>
                             </div>
                             <div class="cardName">
                                 <div class="productName">
@@ -162,6 +171,11 @@
                     <div class="card">
                         <div class="cardElementsWrapper">
                             <div class="cardImg cardImg-3">
+                                <div class="cardHover" style="opacity: 0;">
+                                    <div class="sizes">
+                                        S M L
+                                    </div>
+                                </div>
                             </div>
                             <div class="cardName">
                                 <div class="productName">
@@ -200,19 +214,171 @@
                         
                 </div>
             </div>
-
+            <div class="links">
+                <div class="linksWrapper">
+                    <div class="box box-1">
+                        <p class="linkText">
+                            About us
+                        </p>
+                    </div>
+                    <div class="box box-2">
+                        <p class="linkText inst-link">
+                            Instagram
+                        </p>
+                    </div>
+                    <div class="box box-3">
+                        <p class="linkText">
+                            #colarstyle
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-
-
-        <footer class="footer" id="js-footer">
-
-
-
-        </footer>
+        <section class="subscribe">
+            <h3>Subsctibe to the newsletter</h3>
+            <div class="inputWrapper">
+                <form action="POST">
+                    <input type="email" class="email" placeholder="Email">
+                    <input type="submit" class="buttonSent" value="Sent">
+                </form> 
+            </div>
+        </section>
     </div>
 
+        <footer class="footer" id="js-footer">
+            <div class="footerContainer">
+                <div class="contact">
+                    <div class="nameOfShop logoFooter" id="js-nameOfShop">
+                        <a href="#js-header" class="nameOfShop">
+                            <div class="nameOfShopButton" id="js-nameOfShopButton">
+                                <div class="LOGO">
+                                    <img src="img/LOGO.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            +380 97 61 35 049
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            colar.shop@gmail.com
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Kyiv, Volodymyrska, 46,
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            mon-sun: 8:00 - 21:00
+                        </p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="footerHeader">
+                        Information:
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            About us
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Delivery and payments
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Exchanges and returns
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            News
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Contacts
+                        </p>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <div class="footerHeader">
+                        Catalog:
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Women
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Men
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Сhildren
+                        </p>
+                    </div>
+                    <div class="footerParagraph">
+                        <p>
+                            Сouple clothes
+                        </p>
+                    </div>
+                </div>
+                <div class="socialNetworks">
+                    <div class="footerHeader">
+                        Social networks:
+                    </div>
+                    <div class="socialMediaWrapper">
+                        <div class="socialMediaIcons">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#141313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.3698C16.1234 12.2021 15.9812 13.052 15.5937 13.7988C15.2062 14.5456 14.5931 15.1512 13.8416 15.5295C13.0901 15.9077 12.2384 16.0394 11.4077 15.9057C10.5771 15.7721 9.80971 15.3799 9.21479 14.785C8.61987 14.1901 8.22768 13.4227 8.09402 12.592C7.96035 11.7614 8.09202 10.9097 8.47028 10.1582C8.84854 9.40667 9.45414 8.79355 10.2009 8.40605C10.9477 8.01856 11.7977 7.8764 12.63 7.99981C13.4789 8.1257 14.2648 8.52128 14.8716 9.12812C15.4785 9.73496 15.8741 10.5209 16 11.3698Z" stroke="#141313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 6.5H17.51" stroke="#141313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="socialMediaIcons">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 19C9.7 19 5.6 18.8 3.9 18.4C3.2 18.2 2.7 17.7 2.5 17C2.2 15.9 2 13.6 2 12C2 10.4 2.2 8.1 2.5 7C2.7 6.3 3.2 5.8 3.9 5.6C5.6 5.2 9.7 5 12 5C14.3 5 18.4 5.2 20.1 5.6C20.8 5.8 21.3 6.3 21.5 7C21.8 8.1 22 10.4 22 12C22 13.6 21.8 15.9 21.5 17C21.3 17.7 20.8 18.2 20.1 18.4C18.4 18.8 14.3 19 12 19V19Z" stroke="#141313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 15L15 12L10 9V15Z" stroke="#141313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="socialMediaIcons">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="#141313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                        <div class="socialMediaIcons">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 4.00002C22 4.00002 21.3 6.10002 20 7.40002C21.6 17.4 10.6 24.7 2 19C4.2 19.1 6.4 18.4 8 17C3 15.5 0.5 9.60002 3 5.00002C5.2 7.60002 8.6 9.10002 12 9.00002C11.1 4.80002 16 2.40002 19 5.20002C20.1 5.20002 22 4.00002 22 4.00002Z" stroke="#141313" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+                <div class="colar2022">
+                    <div class="bankCards">
+                    </div>
+                    <div class="shopName">
+                        <p>“COLAR” 2022</p>
+                    </div>
+                </div>
 
+            </div>
+        </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

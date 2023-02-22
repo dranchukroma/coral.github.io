@@ -21,8 +21,8 @@ input {outline: 0 !important;}
     width: 88.88889%;
     padding: 13px 5.555555%;
     border-bottom: solid #141313 1px;
-    position: absolute;
     z-index: 10;
+    position: fixed;
 }
 
 .helpInformation{
@@ -64,8 +64,22 @@ input {outline: 0 !important;}
 }
 .iconBasket, .iconLike{
     height: 24px;
+    width: 24px;
+    background-size: cover;
+    transition: all 300ms;
 }
-
+.iconBasket{
+    background: url('../img/icons/basket.png') no-repeat center;
+}
+.iconBasket:hover{
+    background: url('../img/icons/basketHover.png') no-repeat center;
+}
+.iconLike{
+    background: url('../img/icons/like.png') no-repeat center;
+}
+.iconLike:hover{
+    background: url('../img/icons/likeHover.png') no-repeat center;
+}
 .otherPages{
     display: flex;
     flex-direction: row;
@@ -119,7 +133,7 @@ input {outline: 0 !important;}
     background-size: cover;
     position: relative;
 }
-.forWho-text{
+.people-text{
     font-size: 24px;
     color: white;
     font-family: 'Kharkiw Tone';
@@ -129,16 +143,25 @@ input {outline: 0 !important;}
 }
 
     /* Recommended */
+.recommended{
+    padding: 0 80px;
+}
 .recomendedWrapper{
     font-size: 32px;
-    font-family: 'Kharkiw Tone';
+
     text-align: center;
     margin: 113px auto 50px auto;
+    padding: 0 80px;
+}
+.recommendedSectionHeader{
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
 }
 
 .cards{
     display: flex;
     justify-content: space-between;
+    font-family: "Montserrat";
 }
 .card{
     width: 407px;
@@ -158,6 +181,18 @@ input {outline: 0 !important;}
     background: url("../img/mainPage/3rdCardImg.png") no-repeat center;
 }
 
+.cardHover{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Kharkiw Tone';
+    border: 1px #141313 solid;
+}
+
 .cardName{
     margin-bottom: 16px;
 }
@@ -166,7 +201,6 @@ input {outline: 0 !important;}
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    font-family: "Montserrat";
     font-weight: 500;
 }
 
@@ -177,4 +211,114 @@ input {outline: 0 !important;}
     margin-right: 0;
     margin-left: auto;
     margin-top: 45px;
+}
+
+
+.linksWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 82px 0;
+}
+.box{
+    width: 407px;
+    height: 407px;
+    background: no-repeat center;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Kharkiw Tone';
+    color: white;
+    font-size: 24px;
+}
+.box p{
+    margin-top: 324px;
+}
+.box-1{
+    background: url('../img/mainPage/aboutUsPhoto.png');
+}
+.box-2{
+    background: url('../img/mainPage/instagramPhoto.png');
+    color: #141313;
+}
+.box-2 p{
+    margin-top: 243px;
+}
+.box-3{
+    background: url('../img/mainPage/colarStyle.png');
+}
+
+    
+    /* Subscribe */
+.subscribe{
+    text-align: center;
+}
+.subscribe h3{
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 42px;
+}
+.email{
+    width: 337px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #141313;
+    font-size: 16px;
+    font-weight: 500;
+}
+.buttonSent{
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border-color: #141313;
+    transition: all 300ms;
+}
+.buttonSent:hover{
+    transition: all 300ms;
+    background-color: #CEBEB8;
+}
+
+
+    /* footer */
+.footer{
+    margin: 0 auto;
+    margin-top: 62px;
+    padding-top: 45px;
+    background-color: rgba(206, 190, 184, 0.2);
+    font-family: "Montserrat";
+}
+.footerContainer{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logoFooter{
+    margin-bottom: 30px;
+}
+.footerParagraph{
+    margin-bottom: 15px;
+}
+.footerHeader{
+    margin-bottom: 45px;
+}
+.socialMediaWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 171px;
+}
+.colar2022{
+    text-align: right;
+
+}
+.bankCards{
+    width: 165px;
+    height: 50px;
+    background: url('../img/icons/cards.png') no-repeat center;
+    background-size: cover;
+    margin-bottom: 195px;
+}
+.shopName{
+    font-size: 16px;
+    margin-bottom: 24px;
 }
