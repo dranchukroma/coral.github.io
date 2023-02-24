@@ -30,6 +30,7 @@ input {
     border-bottom: solid #141313 1px;
     z-index: 10;
     position: fixed;
+    padding: 12px 0 14px 0;
 }
 .toolWrapper, .otherPages{
     padding: 0 80px 0 80px;
@@ -56,6 +57,7 @@ input {
     height: 24px;
     width: 24px;
     transition: all 300ms;
+    cursor: pointer;
 }
 .iconLike{
     background: url('../img/icons/like.png') no-repeat center;
@@ -107,14 +109,17 @@ input {
 }
 .forHer{
     background: url("../img/mainPage/forHer.png");
+    cursor: pointer;
 }
 .forHim{
     background: url("../img/mainPage/forHim.png");
+    cursor: pointer;
 }
 .forThem{
     width: 100%;
     height: 566px;
     background: url("../img/mainPage/forThem.png");
+    cursor: pointer;
 }
 .categoriesName{
     font-size: 24px;
@@ -179,6 +184,9 @@ input {
     margin-left: auto;
     margin-top: 45px;
 }
+.arrow{
+    cursor: pointer;
+}
 
 /* Links */
 .linksWrapper{
@@ -193,19 +201,30 @@ input {
     font-family: 'Kharkiw Tone';
     color: white;
     font-size: 24px;
+    position: relative;
+    cursor: pointer;
 }
+.hoverLink{
+    width: 407px;
+    height: 407px;
+    position: absolute;
+    background-color: red;
+}
+
 .box p{
-    margin-top: 324px;
+    padding-top: 324px;
+    position: relative;
+    z-index: 3;
 }
 .box-1{
     background: url('../img/mainPage/aboutUsPhoto.png');
 }
 .box-2{
     background: url('../img/mainPage/instagramPhoto.png');
-    color: #141313;
 }
-.box-2 p{
-    margin-top: 243px;
+.box p.inst-link{
+    padding-top: 243px;
+    color: #141313;
 }
 .box-3{
     background: url('../img/mainPage/colarStyle.png');
@@ -238,6 +257,7 @@ input {
     width: 200px;
     transition: all 300ms;
     border: 1px solid #141313;
+    cursor: pointer;
 }
 .buttonSent:hover{
     transition: all 300ms;
@@ -252,7 +272,7 @@ input {
     background-color: rgba(206, 190, 184, 0.2);
     font-family: "Montserrat";
 }
-.footer .container .flexRow{
+.footerWrapper{
     padding: 0 80px 0 80px;
     align-items: start;
 }
@@ -266,10 +286,14 @@ input {
 }
 .footerParagraph{
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
-.socialMediaWrapper{
+.socialNetworks{
     width: 171px;
+}
+.socialMediaIcons{
+    cursor: pointer;
 }
 
 .colar2022{
