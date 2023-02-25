@@ -12,6 +12,10 @@ input {
     background-color: transparent;
     border: none;
 }
+a{
+    text-decoration: none;
+    color: #141313;
+}
 
 .container{
     width: 1440px;
@@ -23,6 +27,7 @@ input {
     align-items: center;
     flex-direction: row;
 }
+
 
 /* Navigation */
 .navigation{
@@ -80,10 +85,19 @@ input {
     padding-top: 16px;
 }
 .otherPages a{
-    text-decoration: none;
-    color: #141313;
     font-size: 18px;
     font-family: "Montserrat";
+    transition: all 300ms;
+    border-bottom: rgba(20, 19, 19, 0) solid 1px;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.otherPages a:hover{
+    background-size: 100% 2px;
 }
 
 
@@ -133,6 +147,7 @@ input {
     bottom: 30px;
 }
 
+
 /* Recommended */
 .recH3{
     font-size: 32px;
@@ -145,10 +160,9 @@ input {
 }
 
 .recommendation .cardsWrapper{
-    padding: 0 80px;
+    padding: 0 60px 0 80px;
 }
 .card{
-    max-width: 407px;
     width: 407px;
     font-family: "Montserrat";
 }
@@ -165,8 +179,11 @@ input {
 .cardImg-3{
     background: url("../img/mainPage/3rdCardImg.png") no-repeat;
 }
+.cardImg-4{
+    background: url("../img/mainPage/2ndCardImg.png") no-repeat;
+}
 .cardImgHover{
-    width: 407px;
+    width: 405px;
     height: 508px;
     background-color: rgb(255, 255, 255, 0.8);
     justify-content: center;
@@ -183,13 +200,20 @@ input {
 }
 .arrows{
     width: 78px;
-    margin-right: 0;
+    margin-right: 20px;
     margin-left: auto;
     margin-top: 45px;
 }
-.arrow{
+.arrow svg{
     cursor: pointer;
+    height: 24px;
+    border: rgb(20, 19, 19, 0) solid 1px;
+    transition: all 300ms;
 }
+.arrow svg:hover{
+    border: rgb(20, 19, 19, 1) solid 1px;
+}
+
 
 /* Links */
 .linksWrapper{
