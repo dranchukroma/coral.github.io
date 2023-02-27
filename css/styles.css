@@ -28,6 +28,26 @@ a{
     flex-direction: row;
 }
 
+.iconBasket, .iconLike{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+.Like{
+    fill: rgba(20, 19, 19, 0);
+    transition: all 300ms;
+}
+.Like:hover{
+    fill: rgb(20, 19, 19, 1);
+}   
+.Basket{
+    fill: rgba(20, 19, 19, 0);
+    transition: all 300ms;
+}
+.Basket:hover{
+    fill: rgb(20, 19, 19, 1);
+}
+
 
 /* Navigation */
 .navigation{
@@ -52,7 +72,16 @@ a{
 
 .iconSearch{
     height: 24px;
+    width: 24px;
 }
+.search {
+    fill: none;
+    opacity: .5;
+    stroke: #141313;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+
 .LOGO{
     width: 145px;
     height: 36px;
@@ -60,24 +89,6 @@ a{
 .otherTool{
     width: 78px;
     margin-left: 124px;
-}
-.iconBasket, .iconLike{
-    height: 24px;
-    width: 24px;
-    transition: all 300ms;
-    cursor: pointer;
-}
-.iconLike{
-    background: url('../img/icons/like.png') no-repeat center;
-}
-.iconLike:hover{
-    background: url('../img/icons/likeHover.png') no-repeat center;
-}
-.iconBasket{
-    background: url('../img/icons/basket.png') no-repeat center;
-}
-.iconBasket:hover{
-    background: url('../img/icons/basketHover.png') no-repeat center;
 }
 
 .otherPages{
@@ -114,12 +125,15 @@ a{
 
 
 /* Recommendation */
+.categoriesWrapper{
+    padding: 0 80px;
+}
 .wrapperHimHer{
     margin: 30px 0px;
 }
 .categoriesImg{
-    width: 705px;
-    height: 768px;
+    width: 625px;
+    height: 767px;
     background: no-repeat center;
     background-size: cover;
     position: relative;
