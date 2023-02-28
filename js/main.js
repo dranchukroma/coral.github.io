@@ -1,22 +1,13 @@
 $(document).ready(function(){
-    hoverCards('.cardImg');
     hoverLinks('.box', '.hoverLink');
     navigation('.navigation');
 });
 
-function hoverCards(hoverElement){
-    $(hoverElement).hover(function(){
-        $(this).children().stop().animate({ opacity: 1 }, 200);
+function hoverLinks(onHoverElement, choverElement){
+    $(onHoverElement).hover(function(){
+        $(this).children('a').children(choverElement).stop().animate({ opacity: 1 }, 200);
         }, function() {
-        $(this).children().stop().animate({ opacity: 0 }, 200);
-        });
-}
-
-function hoverLinks(hoverElement, hoverChild){
-    $(hoverElement).hover(function(){
-        $(this).children(hoverChild).stop().animate({ opacity: 1 }, 200);
-        }, function() {
-        $(this).children(hoverChild).stop().animate({ opacity: 0.7 }, 200);
+        $(this).children('a').children(choverElement).stop().animate({ opacity: 0.7 }, 200);
     });
 }
 
