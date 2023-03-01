@@ -24,10 +24,6 @@ function navigation(navigationElement){
             $(navigationElement).css({'top': ('-' + ($(navigationElement).height() + 30) + 'px')});
         }
     })
-    //Changing background-color
-    $(window).scroll(function(){
-        ($(window).scrollTop() > 0) ? $(navigationElement).addClass('navigationBG') : $(navigationElement).removeClass('navigationBG');
-    });
 }
 
 

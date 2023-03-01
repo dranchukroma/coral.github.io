@@ -68,8 +68,6 @@ a{
     z-index: 10;
     position: fixed;
     padding: 12px 0 14px 0;
-}
-.navigationBG{
     background-color: rgb(255, 255, 255, 1);
 }
 .toolWrapper, .otherPages{
