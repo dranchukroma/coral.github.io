@@ -33,21 +33,21 @@ function navigation(navigationElement){
 
 
 
-function changingHeader(){
+function changingHeader(gitHubURL){
     $('.dot').on('click', function(){
         var checkElement = $(this).attr("id")
         if(checkElement == 'js-dot-1'){
-            changeToStyle1();
+            changeToStyle1(gitHubURL);
         }
         else if(checkElement == 'js-dot-2'){
-            changeToStyle2();
+            changeToStyle2(gitHubURL);
         }
         else if(checkElement == 'js-dot-3'){
-            changeToStyle3();
+            changeToStyle3(gitHubURL);
         }
     });
 }
-function changeToStyle1(){
+function changeToStyle1(gitHubURL){
     //Changing dots status Active/noActive
     $('#js-dot-1').addClass('dotActive');
     $('#js-dot-2').removeClass('dotActive');
@@ -62,7 +62,7 @@ function changeToStyle1(){
     }, 300)
     setTimeout(function(){
         $('.imgBackground').css({
-            'background': 'url("/img/mainPage/headerStyle1.png") center',
+            'background': 'url("https://dranchukroma.github.io/coral.github.io/img/mainPage/headerStyle1.png")',
             'background-size': 'cover',
         });
     }, 300)
@@ -106,7 +106,7 @@ function changeToStyle1(){
         opacity: '1',
     }, 300);
 }
-function changeToStyle2(){
+function changeToStyle2(gitHubURL){
     //Changing dots status Active/noActive
     $('#js-dot-1').removeClass('dotActive');
     $('#js-dot-2').addClass('dotActive');
@@ -121,7 +121,7 @@ function changeToStyle2(){
     }, 300)
     setTimeout(function(){
         $('.imgBackground').css({
-            'background': 'url("/img/mainPage/headerStyle2.png") center',
+            'background': 'url("https://dranchukroma.github.io/coral.github.io/img/mainPage/headerStyle2.png")',
             'background-size': 'cover',
         });
     }, 300)
@@ -165,7 +165,7 @@ function changeToStyle2(){
         opacity: '1',
     }, 300);
 }
-function changeToStyle3(){
+function changeToStyle3(gitHubURL){
     //Changing dots status Active/noActive
     $('#js-dot-1').removeClass('dotActive');
     $('#js-dot-2').removeClass('dotActive');
@@ -180,7 +180,7 @@ function changeToStyle3(){
     }, 300)
     setTimeout(function(){
         $('.imgBackground').css({
-            'background': 'url("/img/mainPage/headerStyle3.png") center',
+            'background': 'url("https://dranchukroma.github.io/coral.github.io/img/mainPage/headerStyle3.png")',
             'background-size': 'cover',
         });
     }, 300)
