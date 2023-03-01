@@ -62,7 +62,7 @@ function changeToStyle1(){
     }, 300)
     setTimeout(function(){
         $('.imgBackground').css({
-            'background': 'url("/img/mainPage/headerStyle1.png") center',
+            'background': 'url("../img/mainPage/headerStyle1.png") center',
             'background-size': 'cover',
         });
     }, 300)
@@ -121,7 +121,7 @@ function changeToStyle2(){
     }, 300)
     setTimeout(function(){
         $('.imgBackground').css({
-            'background': 'url("/img/mainPage/headerStyle2.png") center',
+            'background': 'url("../img/mainPage/headerStyle2.png") center',
             'background-size': 'cover',
         });
     }, 300)
@@ -180,7 +180,7 @@ function changeToStyle3(){
     }, 300)
     setTimeout(function(){
         $('.imgBackground').css({
-            'background': 'url("/img/mainPage/headerStyle3.png") center',
+            'background': 'url("../img/mainPage/headerStyle3.png") center',
             'background-size': 'cover',
         });
     }, 300)
