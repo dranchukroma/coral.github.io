@@ -118,16 +118,124 @@ a{
 }
 
 
+
 /* Header */
-.header{
-    height: 100vh;
-    width: 100%;
+.headerContainer{
+    padding: 106px 80px 0px 80px;
+    align-items: end;
 }
-.headerBg{
-    height: 100%;
-    background: url("../img/mainPage/mainPage.png") no-repeat center;
+.imgBlock{
+    width: 898px;
+    height: 809px;
+    position: relative;
+}
+.imgBackground{
+    height: 809px;
+    width: 898px;
+    background: url('../img/mainPage/headerStyle1.png') center no-repeat;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
+.imgBackground-mask{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.headerFirstTitle, .headerSecondTitle{
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    background-color: rgb(255, 255, 255, 1);
+    position: absolute;
+}
+
+.headerFirstTitle{
+    top: 50px;
+    right: -382px;
+    width: 714px;
+}
+.changingFirstTitle{
+    width: 376px;
+}
+.stylish{
+    font-size: 16px;
+    margin-right: 26px;
+}
+
+.headerSecondTitle{
+    width: 649px;
+    top: 158px;
+    right: -382px;
+    text-align: right;
+}
+
+.dotsForSlider{
+    width: 90px;
+    margin: 0 auto 20px auto;
+}
+.dot{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #141313;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.dotActive{
+    background-color: #141313;
+}
+
+.paintElement{
+    width: 353px;
+    height: 490px;
+    padding-top: 40px;
+    background-color: rgb(77, 75, 80, 1);   
+}
+.borderElement{
+    margin: 0 10px;
+    width: 317px;
+    height: 304px;
+    border: white solid 8px;
+}
+.panelPaint{
+    margin: 0 10px;
+    background-color: white;
+    padding-bottom: 14px;
+}
+.paintText{
+    font-family: "Inter", sans-serif;
+    margin-left: 8px;
+    padding-top: 10px;
+}
+.paintTitle{
+    font-size: 38px;
+}
+.R-wrapper{
+    display: flex;
+}
+.R-element{
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+    border: solid black 2.5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.R-element div p{
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+
+.paintModel, .paintColor{
+    font-size: 18px;
+}
+
 
 
 /* Recommendation */
@@ -352,7 +460,8 @@ a{
     fill: rgba(20, 19, 19, 0.0);
 }
 .instagramIcon-SVG:hover .instagramIcon-P3, .instagramIcon-SVG:hover .instagramIcon-P2{
-    stroke: rgb(255, 255, 255);
+    stroke: rgba(255, 255, 255);
+    fill: rgba(255, 255, 255);
 }
 .instagramIcon-SVG:hover .instagramIcon-P1{
     fill: rgb(20, 19, 19, 1);

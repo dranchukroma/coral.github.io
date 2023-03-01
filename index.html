@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colar</title>
-
     <!-- Favicon -->
     <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="/favicon.ico" rel="icon">
-
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!--Main CSS file-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -81,8 +80,73 @@
         </div>
     </nav>
 
-    <header class="header" id="js-header">
-        <div class="headerBg">
+    <header class="header container" id="js-header">
+        <div class="headerContainer flexRow">
+            <div class="imgBlock">
+                <div class="imgBackground" style="opacity: 1">
+                </div>
+                <div class="imgBackground-mask">
+                    <div class="headerFirstTitle flexRow">
+                        <div class="changingFirstTitle">
+                            <p id='js-firstTitleChange'>
+                                Get Ready to Take on Any Challenge
+                            </p>
+                        </div>
+                        <div class="stylishWrapper flexRow">
+                            <div class="stylish">
+                                <p><< you are stylish >></p>
+                                <p><< you are stylish >></p>
+                            </div>
+                            <div>
+                                with
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerSecondTitle">
+                        <p id='js-secondTitleChange'>
+                            Our Fashion-Forward Sportswear!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="paintBlock">
+                <div class="paintWrapper">
+                    <div class="dotsForSlider flexRow">
+                            <div class="dot dotActive" id="js-dot-1">
+                            </div>
+                            <div class="dot" id="js-dot-2">
+                            </div>
+                            <div class="dot" id="js-dot-3">
+                            </div>
+                    </div>
+                    <div class="paintElement" id='js-paintColorToChange'>
+                        <div class="borderElement">
+                        </div>
+                        <div class="panelPaint">
+                            <div class="paintText">
+                                <div class="R-wrapper">
+                                    <div>
+                                        <p class="paintTitle">
+                                            PANTONE
+                                        </p>
+                                    </div>
+                                    <div class="R-element">
+                                        <div>
+                                            <p>R</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="paintModel" id='js-modelToChange'>
+                                    19-3901 TCX
+                                </p>
+                                <p class="paintColor" id='js-colorToChange'>
+                                    Magnet
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -515,12 +579,20 @@
             </div>
         </div>
     </footer>
+    
 
+
+
+    <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--JQuery color animation-->
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    <!--Main JS file-->
     <script src="js/main.js"></script>
-
     <!-- Slick -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--JS file for slider-->
     <script src="js/slider.js"></script>
 </body>
 </html>
