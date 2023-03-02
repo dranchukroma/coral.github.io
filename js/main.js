@@ -1,7 +1,10 @@
 $(document).ready(function(){
     hoverLinks('.box', '.hoverLink');
     navigation('.navigation');
-    changingHeader();
+    changingOnClickHeader();
+    timerToHeader(7000);
+
+
 
 });
 
@@ -26,24 +29,52 @@ function navigation(navigationElement){
     })
 }
 
+//Timer to changing header
+function timerToHeader(changingTime){
+    var changingInterval = setInterval(function(){
+        if($('#js-dot-1').hasClass('dotActive')){
+            changeToStyle2();
+        }
+        else if($('#js-dot-2').hasClass('dotActive')){
+            changeToStyle3();
+        }
+        else if($('#js-dot-3').hasClass('dotActive')){
+            changeToStyle1();
+        }
+    }, changingTime)
+    $('.paintWrapper').hover(function(){
+        clearInterval(changingInterval);
+    }, function(){
+        changingInterval = setInterval(function(){
+            if($('#js-dot-1').hasClass('dotActive')){
+                changeToStyle2();
+            }
+            else if($('#js-dot-2').hasClass('dotActive')){
+                changeToStyle3();
+            }
+            else if($('#js-dot-3').hasClass('dotActive')){
+                changeToStyle1();
+            }
+        }, changingTime)
+    });
 
-
-
-function changingHeader(gitHubURL){
+}
+//Changing header
+function changingOnClickHeader(){
     $('.dot').on('click', function(){
         var checkElement = $(this).attr("id")
         if(checkElement == 'js-dot-1'){
-            changeToStyle1(gitHubURL);
+            changeToStyle1();
         }
         else if(checkElement == 'js-dot-2'){
-            changeToStyle2(gitHubURL);
+            changeToStyle2();
         }
         else if(checkElement == 'js-dot-3'){
-            changeToStyle3(gitHubURL);
+            changeToStyle3();
         }
     });
 }
-function changeToStyle1(gitHubURL){
+function changeToStyle1(){
     //Changing dots status Active/noActive
     $('#js-dot-1').addClass('dotActive');
     $('#js-dot-2').removeClass('dotActive');
@@ -102,7 +133,7 @@ function changeToStyle1(gitHubURL){
         opacity: '1',
     }, 300);
 }
-function changeToStyle2(gitHubURL){
+function changeToStyle2(){
     //Changing dots status Active/noActive
     $('#js-dot-1').removeClass('dotActive');
     $('#js-dot-2').addClass('dotActive');
@@ -161,7 +192,7 @@ function changeToStyle2(gitHubURL){
         opacity: '1',
     }, 300);
 }
-function changeToStyle3(gitHubURL){
+function changeToStyle3(){
     //Changing dots status Active/noActive
     $('#js-dot-1').removeClass('dotActive');
     $('#js-dot-2').removeClass('dotActive');
