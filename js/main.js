@@ -3,6 +3,8 @@ $(document).ready(function(){
     navigation('.navigation');
     changingOnClickHeader();
     timerToHeader(7000);
+    addingToFavorite();
+    addingToBasket();
 
 
 
@@ -251,4 +253,15 @@ function changeToStyle3(){
         opacity: '1',
     }, 300);
 
+}
+//Changing like and basket icon on click
+function addingToFavorite(){
+    $('.Like').on('click', function(){
+        $(this).toggleClass('onClickIcon');
+    });
+}
+function addingToBasket(){
+    $('.Basket').on('click', function(){
+        $(this).toggleClass('onClickIcon');
+    });
 }

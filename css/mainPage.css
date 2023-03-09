@@ -1,0 +1,301 @@
+/* Header */
+.headerContainer{
+    padding: 106px 80px 0px 80px;
+    align-items: end;
+}
+.imgBlock{
+    width: 898px;
+    height: 809px;
+    position: relative;
+}
+.imgBackground{
+    height: 809px;
+    width: 898px;
+    background: url('../img/mainPage/headerStyle1.png') center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.imgBackground-mask{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.headerFirstTitle, .headerSecondTitle{
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    background-color: rgb(255, 255, 255, 1);
+    position: absolute;
+}
+
+.headerFirstTitle{
+    top: 50px;
+    right: -382px;
+    width: 714px;
+}
+.changingFirstTitle{
+    width: 376px;
+}
+.stylish{
+    font-size: 16px;
+    margin-right: 26px;
+}
+
+.headerSecondTitle{
+    width: 649px;
+    top: 158px;
+    right: -382px;
+    text-align: right;
+}
+
+.dotsForSlider{
+    width: 90px;
+    margin: 0 auto 20px auto;
+}
+.dot{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid #141313;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.dotActive{
+    background-color: #141313;
+}
+
+.paintElement{
+    width: 353px;
+    height: 490px;
+    padding-top: 40px;
+    background-color: rgb(77, 75, 80, 1);   
+}
+.borderElement{
+    margin: 0 10px;
+    width: 317px;
+    height: 304px;
+    border: white solid 8px;
+}
+.panelPaint{
+    margin: 0 10px;
+    background-color: white;
+    padding-bottom: 14px;
+}
+.paintText{
+    font-family: "Inter", sans-serif;
+    margin-left: 8px;
+    padding-top: 10px;
+}
+.paintTitle{
+    font-size: 38px;
+}
+.R-wrapper{
+    display: flex;
+}
+.R-element{
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+    border: solid black 2.5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+.R-element div p{
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+
+.paintModel, .paintColor{
+    font-size: 18px;
+}
+
+
+/* Recommendation */
+.categoriesWrapper{
+    padding: 0 80px;
+}
+.wrapperHimHer{
+    margin: 30px 0px;
+}
+.categoriesImg{
+    width: 625px;
+    height: 767px;
+    background: no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.forHer{
+    background: url("../img/mainPage/forHer.png") center;
+}
+.forHim{
+    background: url("../img/mainPage/forHim.png") center;
+}
+.forThem{
+    width: 100%;
+    height: 566px;
+    background: url("../img/mainPage/forThem.png") center;
+}
+.categoriesName{
+    font-size: 24px;
+    color: white;
+    font-family: 'Kharkiw Tone';
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+
+/* Recommended */
+.recH3{
+    font-size: 32px;
+    text-align: center;
+    margin: 113px 0 50px 0;
+    font-family: 'Kharkiw Tone';
+}
+.recH3 h3{
+    font-weight: 400;
+}
+
+.recommendation .cardsWrapper{
+    padding: 0 60px 0 80px;
+}
+.card{
+    width: 407px;
+    font-family: "Montserrat";
+}
+.cardImg{
+    height: 508px;
+    margin-bottom: 30px;
+}
+.cardImg-1{
+    background: url("../img/mainPage/1stCardImg.png") no-repeat;
+}
+.cardImg-2{
+    background: url("../img/mainPage/2ndCardImg.png") no-repeat; 
+}
+.cardImg-3{
+    background: url("../img/mainPage/3rdCardImg.png") no-repeat;
+}
+.cardImg-4{
+    background: url("../img/mainPage/2ndCardImg.png") no-repeat;
+}
+.cardImgHover{
+    width: 405px;
+    height: 508px;
+    background-color: rgb(255, 255, 255, 0.8);
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Kharkiw Tone';
+    border: 1px #141313 solid;
+    opacity: 0;
+    transition: all 300ms;
+}
+.cardImgHover:hover{
+    opacity: 1;
+}
+.cardTitle{
+    margin-bottom: 16px;
+}
+.cardTitle, .cardPriceWrapper{
+    font-size: 18px;
+    font-weight: 500;
+}
+.arrows{
+    width: 78px;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: 45px;
+}
+.arrow svg{
+    cursor: pointer;
+    height: 24px;
+    border: rgb(20, 19, 19, 0) solid 1px;
+    transition: all 300ms;
+}
+.arrow svg:hover{
+    border: rgb(20, 19, 19, 1) solid 1px;
+}
+
+
+/* Links */
+.linksWrapper{
+    margin: 82px 0;
+    padding: 0 80px ;
+}
+.box{
+    width: 407px;
+    height: 407px;
+    background: no-repeat center;
+    text-align: center;
+    font-family: 'Kharkiw Tone';
+    font-size: 24px;
+    position: relative;
+}
+.box a{
+    color: white;
+}
+.hoverLink{
+    width: 407px;
+    height: 407px;
+    position: absolute;
+    opacity: 0.7;
+}
+
+.box p{
+    padding-top: 324px;
+    position: relative;
+    z-index: 3;
+}
+.box-1{
+    background: url('../img/mainPage/aboutUsPhoto.png');
+}
+.box-2{
+    background: url('../img/mainPage/instagramPhoto.png');
+}
+.box p.inst-link{
+    padding-top: 243px;
+    color: #141313;
+}
+.box-3{
+    background: url('../img/mainPage/colarStyle.png');
+}
+
+
+/* Subscribe */
+.subscribe{
+    text-align: center;
+}
+
+.subscribe h3{
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 42px;
+}
+
+.email, .buttonSent{
+    font-size: 16px;
+    height: 50px;
+}
+.email{
+    width: 337px;
+    border: none;
+    font-weight: 500;
+    border-bottom: 1px solid #141313;
+}
+.buttonSent{
+    width: 200px;
+    transition: all 300ms;
+    border: 1px solid #141313;
+    cursor: pointer;
+}
+.buttonSent:hover{
+    transition: all 300ms;
+    background-color: #CEBEB8;
+}
