@@ -23,13 +23,13 @@
     <nav class="navigation" style="transition: all 300ms; top: 0">
         <div class="container">
             <div class="toolWrapper flexRow">
-                <div class="searchWrapper">
-                    <div class="searchTool flexRow">
+                <div class="searchWrapper" id="js-searchWrapper">
+                    <div class="searchTool flexRow" id="js-search" on>
                         <div>
-                            <input class="inputSearch input" type="text" placeholder="Search">
+                            <input class="inputSearch input" id="js-inputSearch" type="text" placeholder="Search">
                         </div>
                         <div class="iconSearch">
-                            <svg id="search" data-name="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.03 21.53">
+                            <svg width="24" height="24" id="search" data-name="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.03 21.53">
                                 <path class="search" d="M20.62,19.62l-.5,.5-5.03-5.03c-1.5,1.49-3.56,2.41-5.84,2.41-4.56,0-8.25-3.69-8.25-8.25S4.69,1,9.25,1s8.25,3.69,8.25,8.25c0,2.02-.72,3.87-1.94,5.31l5.06,5.06Z"/>
                             </svg>
                         </div>
@@ -58,6 +58,92 @@
                             <path d="M19 22C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20C18.4477 20 18 20.4477 18 21C18 21.5523 18.4477 22 19 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M2.05005 2.05005H4.05005L6.71005 14.47C6.80763 14.9249 7.06072 15.3315 7.42576 15.6199C7.7908 15.9083 8.24495 16.0604 8.71005 16.05H18.49C18.9452 16.0493 19.3865 15.8933 19.7411 15.6079C20.0956 15.3224 20.3422 14.9246 20.4401 14.48L22.09 7.05005H5.12005" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>                            
+                    </div>
+                    <div class="popUp popUp-Basket">
+                        <div class="popUp-header-block">
+                            <div class="flexRow">
+                                <div class="popUp-header">
+                                    <h3>
+                                        Cart
+                                    </h3>
+                                </div>
+                                <div class="cross">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 6L6 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>          
+                                </div>
+                            </div>
+                            <div class="popUp-line">
+                            </div>
+                        </div>
+
+                        <div class="cartsContainer">
+                            <div class="addedCardsBasket">
+                                <div class="cart">
+                                    <div class="flexRow">
+                                        <div class="cart-header">
+                                            <p>Basic sports suit</p>
+                                        </div>
+                                        <div class="cross">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18 6L6 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>          
+                                        </div>
+                                    </div>
+                                    <div class="cart-wrapper flexRow">
+                                        <div class="cart-img">
+                                            <img src="./img/mainPage/1stCardImg.png" width="135" height="168px" class="cart-image" alt="">
+                                        </div>
+                                        <div class="item-info flexRow">
+                                            <div class="item-articleNumber">
+                                                <p>Article number: 2145995</p>
+                                            </div>
+                                            <div class="item-color">
+                                                <p>
+                                                    green
+                                                </p>
+                                            </div>
+                                            <div class="item-size">
+                                                S
+                                            </div>
+                                            <div class="item-counting">
+                                                <div class="flexRow">
+                                                    <div class="item-minus">
+                                                        <div class="minus-line"></div>
+                                                    </div>
+                                                    <div class="item-count">
+                                                        1
+                                                    </div>
+                                                    <div class="item-add">
+                                                        <div class="minus-line"></div>
+                                                        <div class="plus-line"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item-fullPrice">
+                                        <p>Everything: <span class="item-price"></span> uah</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sum">
+                                <p>Всього: <span class="changingSum"></span> uah</p>
+                            </div>
+                            <a href="">
+                                <div class="popUp-button">
+                                    <p>Go to cart</p>
+                                </div>
+                            </a>
+                        </div>
+<!-- 
+                        <div class="empty">
+                            <p>
+                                it's empty
+                            </p>
+                        </div> -->
                     </div>
                 </div>
             </div>

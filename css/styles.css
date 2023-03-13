@@ -18,7 +18,7 @@ a{
 }
 
 .container{
-    width: 1440px;
+    width: 1280px;
     margin: 0 auto;
 }
 .flexRow{
@@ -29,8 +29,8 @@ a{
 }
 
 .iconBasket, .iconLike{
-    height: 24px;
-    width: 24px;
+    /* height: 24px;
+    width: 24px; */
     cursor: pointer;
 }
 .Like{
@@ -72,26 +72,33 @@ a{
     padding: 12px 0 14px 0;
     background-color: rgb(255, 255, 255, 1);
 }
-.toolWrapper, .otherPages{
-    padding: 0 80px 0 80px;
-}
 
 .searchTool{
     width: 202px;
     height: 32px;
     border-bottom: 1px solid #141313;
+    position: relative;
 }
 
-.iconSearch{
-    height: 24px;
-    width: 24px;
-}
 .search {
     fill: none;
     opacity: .5;
     stroke: #141313;
     stroke-miterlimit: 10;
     stroke-width: 2px;
+}
+
+.popUp{
+    position: absolute;
+    width: 335px;
+    padding: 20px;
+    background-color: white;
+    transition: all 300ms;
+    border: #141313 solid 1px;
+    top: 47px;
+    font-family: "Montserrat";
+    font-size: 14px;
+
 }
 
 .LOGO{
@@ -101,6 +108,99 @@ a{
 .otherTool{
     width: 78px;
     margin-left: 124px;
+}
+
+.popUp-Basket{
+    margin-left: -298px;
+    padding: 20px 0px;
+    width: 375px;
+
+}
+.popUp-button{
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    border: #141313 solid 1px;
+    margin-top: 33px;
+}
+
+.popUp-header-block .flexRow{
+    padding: 0 20px;
+}
+.popUp-header{
+    font-family: 'Kharkiw Tone';
+    font-size: 20px;
+    
+}
+.cross{
+    height: 24px;
+}
+.popUp-line{
+    height: 0.5px;
+    background-color: #141313;
+    margin: 20px auto 0;
+    width: 375px;
+}
+
+.empty{
+    text-align: center;
+    margin: 36px 0;
+}
+
+.sum{
+    padding-top: 20px;
+}
+
+.cartsContainer{
+    padding: 0 20px;
+}
+
+.cart{
+    border: #141313 1px solid;
+    width: 293px;
+    padding: 20px;
+}
+
+.cart-header{
+    font-size: 16px;
+    font-weight: 500;
+}
+.cart-wrapper{
+    margin-top: 29px;
+    justify-content: left;
+}
+.cart-img{
+    height: 168px;
+}
+.item-info{
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: start;
+    height: 168px;
+}
+.item-articleNumber{
+    font-size: 10px;
+}
+
+.item-counting{
+    width: 85px;
+    height: 24px;
+}
+.minus-line, .plus-line{
+    height: 1px;
+    background-color: #141313;
+    width: 14px;
+    margin: 0 auto
+}
+.plus-line{
+    transform: rotate(90deg);
+    transform-origin: center;
+    margin-top: -0.5px;
+}
+
+.item-fullPrice{
+    text-align: center;
+    margin-top: 30px;
 }
 
 .otherPages{
@@ -127,7 +227,6 @@ a{
     font-family: "Montserrat";
 }
 .footerWrapper{
-    padding: 0 80px 0 80px;
     align-items: start;
 }
 

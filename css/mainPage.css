@@ -1,6 +1,6 @@
 /* Header */
 .headerContainer{
-    padding: 106px 80px 0px 80px;
+    padding-top: 106px;
     align-items: end;
 }
 .imgBlock{
@@ -117,9 +117,6 @@
 
 
 /* Recommendation */
-.categoriesWrapper{
-    padding: 0 80px;
-}
 .wrapperHimHer{
     margin: 30px 0px;
 }
@@ -160,10 +157,6 @@
 }
 .recH3 h3{
     font-weight: 400;
-}
-
-.recommendation .cardsWrapper{
-    padding: 0 60px 0 80px;
 }
 .card{
     width: 407px;
@@ -226,7 +219,6 @@
 /* Links */
 .linksWrapper{
     margin: 82px 0;
-    padding: 0 80px ;
 }
 .box{
     width: 407px;

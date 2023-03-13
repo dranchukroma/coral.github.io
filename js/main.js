@@ -5,7 +5,7 @@ $(document).ready(function(){
     timerToHeader(7000);
     addingToFavorite();
     addingToBasket();
-
+    search();
 
 
 });
@@ -263,5 +263,22 @@ function addingToFavorite(){
 function addingToBasket(){
     $('.Basket').on('click', function(){
         $(this).toggleClass('onClickIcon');
+    });
+}
+function search(){
+    $('#js-search').click(function(){
+        var noResults = $('<div class="popUp search-results"><p class="empty">The search yielded no results</p></div>');
+        $('.searchWrapper').append(noResults);
+
+        $('#js-inputSearch').keypress(function(){
+            //Searching between elements
+            console.log('searching in data bases');
+        });
+
+        $(document).on('click', function(e){
+            if($(e.target).closest('#js-searchWrapper').length === 0) {
+                $('.search-results').remove();
+            }
+        });
     });
 }
