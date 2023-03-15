@@ -6,6 +6,7 @@ $(document).ready(function(){
     addingToFavorite();
     addingToBasket();
     search();
+    showHidePopUp('.cross-popUp', '.popUp-Basket-icon' , '.popUp-Basket');
 
 
 });
@@ -263,6 +264,7 @@ function addingToFavorite(){
 function addingToBasket(){
     $('.Basket').on('click', function(){
         $(this).toggleClass('onClickIcon');
+        makingCards();
     });
 }
 function search(){
@@ -282,3 +284,22 @@ function search(){
         });
     });
 }
+
+function makingCards(){
+    const card = $('<div class="cart"><div class="flexRow"><div class="cart-header"><p>Basic sports suit</p></div><div class="cross"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><div class="cart-wrapper flexRow"><div class="cart-img"><img src="./img/mainPage/1stCardImg.png" width="135" height="168px" class="cart-image" alt=""></div><div class="item-info flexRow"><div class="item-articleNumber"><p>Article number: 2145995</p></div><div class="item-color"><p>green</p></div><div class="item-size">S</div><div class="item-counting"><div class="flexRow"><div class="item-minus"><div class="minus-line"></div></div><div class="item-count">1</div><div class="item-add"><div class="minus-line"></div><div class="plus-line"></div></div></div></div></div></div><div class="item-fullPrice"><p>Everything: <span class="item-price"></span> uah</p></div></div>')
+    $('.addedCardsBasket').append(card);
+}
+
+function showHidePopUp(hideEl, showEl, popUpEl){
+    console.log('Hello1');
+    $(showEl).click(function(){
+        $(popUpEl).toggleClass('hiddenPopUp');
+        console.log('Hello2');
+    });
+    $(hideEl).click(function(){
+        $(popUpEl).addClass('hiddenPopUp');
+        console.log('Hello2');
+    });
+}
+
+// articleNumber, color, size, counts, price, image

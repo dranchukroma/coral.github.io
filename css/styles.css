@@ -98,7 +98,7 @@ a{
     top: 47px;
     font-family: "Montserrat";
     font-size: 14px;
-
+    opacity: 1;
 }
 
 .LOGO{
@@ -108,6 +108,10 @@ a{
 .otherTool{
     width: 78px;
     margin-left: 124px;
+}
+
+.hiddenPopUp{
+    opacity: 0;
 }
 
 .popUp-Basket{
@@ -159,7 +163,13 @@ a{
     border: #141313 1px solid;
     width: 293px;
     padding: 20px;
+    margin-top: 10px;
 }
+.cart:first-of-type{
+    margin-top: 0;
+    border-top: 0;
+}
+
 
 .cart-header{
     font-size: 16px;
