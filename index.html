@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <!--Main CSS file-->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Main page CSS file -->
     <link rel="stylesheet" href="css/mainPage.css">
 </head>
 <body>
@@ -34,6 +35,11 @@
                             </svg>
                         </div>
                     </div>
+
+                    <div class="popUp search-results hiddenPopUp">
+                        <p class="empty">The search yielded no results</p>
+                    </div>
+
                 </div>
                 <div class="LogoOfWeb-Site">
                     <a href="#js-header">
@@ -80,54 +86,9 @@
 
                         <div class="cartsContainer">
                             <div class="addedCardsBasket">
-                                <div class="cart">
-                                    <div class="flexRow">
-                                        <div class="cart-header">
-                                            <p>Basic sports suit</p>
-                                        </div>
-                                        <div class="cross">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M18 6L6 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M6 6L18 18" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>          
-                                        </div>
-                                    </div>
-                                    <div class="cart-wrapper flexRow">
-                                        <div class="cart-img">
-                                            <img src="./img/mainPage/1stCardImg.png" width="135" height="168px" class="cart-image" alt="">
-                                        </div>
-                                        <div class="item-info flexRow">
-                                            <div class="item-articleNumber">
-                                                <p>Article number: 2145995</p>
-                                            </div>
-                                            <div class="item-color">
-                                                <p>
-                                                    green
-                                                </p>
-                                            </div>
-                                            <div class="item-size">
-                                                S
-                                            </div>
-                                            <div class="item-counting">
-                                                <div class="flexRow">
-                                                    <div class="item-minus">
-                                                        <div class="minus-line"></div>
-                                                    </div>
-                                                    <div class="item-count">
-                                                        1
-                                                    </div>
-                                                    <div class="item-add">
-                                                        <div class="minus-line"></div>
-                                                        <div class="plus-line"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-fullPrice">
-                                        <p>Everything: <span class="item-price"></span> uah</p>
-                                    </div>
-                                </div>
+
+                                <!-- Added cards -->
+
                             </div>
                             <div class="sum">
                                 <p>Всього: <span class="changingSum"></span> uah</p>
@@ -138,7 +99,7 @@
                                 </div>
                             </a>
                         </div>
-<!-- 
+                    <!-- 
                         <div class="empty">
                             <p>
                                 it's empty
@@ -305,7 +266,7 @@
                                         749 uah
                                     </p>
                                 </div>
-                                <div class="iconBasket">
+                                <div class="iconBasket forSale">
                                     <svg class="Basket" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 22C8.55228 22 9 21.5523 9 21C9 20.4477 8.55228 20 8 20C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M19 22C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20C18.4477 20 18 20.4477 18 21C18 21.5523 18.4477 22 19 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -348,7 +309,7 @@
                                         1695 uah
                                     </p>
                                 </div>
-                                <div class="iconBasket">
+                                <div class="iconBasket forSale">
                                     <svg class="Basket" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 22C8.55228 22 9 21.5523 9 21C9 20.4477 8.55228 20 8 20C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M19 22C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20C18.4477 20 18 20.4477 18 21C18 21.5523 18.4477 22 19 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -391,7 +352,7 @@
                                         1495 uah
                                     </p>
                                 </div>
-                                <div class="iconBasket">
+                                <div class="iconBasket forSale">
                                     <svg class="Basket" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 22C8.55228 22 9 21.5523 9 21C9 20.4477 8.55228 20 8 20C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M19 22C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20C18.4477 20 18 20.4477 18 21C18 21.5523 18.4477 22 19 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -434,7 +395,7 @@
                                         1495 uah
                                     </p>
                                 </div>
-                                <div class="iconBasket">
+                                <div class="iconBasket forSale">
                                     <svg class="Basket" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 22C8.55228 22 9 21.5523 9 21C9 20.4477 8.55228 20 8 20C7.44772 20 7 20.4477 7 21C7 21.5523 7.44772 22 8 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M19 22C19.5523 22 20 21.5523 20 21C20 20.4477 19.5523 20 19 20C18.4477 20 18 20.4477 18 21C18 21.5523 18.4477 22 19 22Z" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -673,7 +634,9 @@
     <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
     <!--Main JS file-->
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <!--MainPage JS file-->
+    <script src="js/mainPage.js"></script>
     <!-- Slick -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!--JS file for slider-->

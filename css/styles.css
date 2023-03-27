@@ -29,8 +29,6 @@ a{
 }
 
 .iconBasket, .iconLike{
-    /* height: 24px;
-    width: 24px; */
     cursor: pointer;
 }
 .Like{
@@ -112,6 +110,7 @@ a{
 
 .hiddenPopUp{
     opacity: 0;
+    display: none;
 }
 
 .popUp-Basket{
@@ -138,6 +137,7 @@ a{
 }
 .cross{
     height: 24px;
+    cursor: pointer;
 }
 .popUp-line{
     height: 0.5px;

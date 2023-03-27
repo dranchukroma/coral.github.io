@@ -1,0 +1,48 @@
+/* Header */
+.header-about{
+    width: 1440px;
+    height: 489px;
+    background: url(../img/aboutPage/aboutHeader.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto 135px;
+    text-align: center;
+}
+.header-text h1{
+    padding-top: 275px;
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+}
+
+/* Links */
+.aboutUs-links{
+    align-items: flex-start;
+}
+.aboutLink-block .img-link-block{
+    width: 298px;
+}
+.text-link-block{
+    display: inline-block;
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.img-link-block-1{
+    background: url(../img/aboutPage/linkHover-1.png);
+    height: 562px;
+}
+.img-link-block-2{
+    background: url(../img/aboutPage/linkHover-2.png);
+    height: 388px;
+}
+.img-link-block-3{
+    background: url(../img/aboutPage/linkHover-3.png);
+    height: 562px;
+}
+.img-link-block-4{
+    background: url(../img/aboutPage/linkHover-4.png);
+    height: 388px;
+}
+
+/* Advantages */
