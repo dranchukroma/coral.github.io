@@ -17,6 +17,7 @@
 /* Links */
 .aboutUs-links{
     align-items: flex-start;
+    margin-bottom: 42px;
 }
 .aboutLink-block .img-link-block{
     width: 298px;
@@ -46,3 +47,61 @@
 }
 
 /* Advantages */
+.advantages .flexRow{
+    align-items: flex-start;
+}
+
+.puzzle-img-block{
+    width: 635px;
+    height: 800px;
+    position: relative;
+}
+.puzzle-img{
+    position: absolute;
+}
+.puzzle-img-1{
+    top: 0;
+    right: 155px;
+}
+.puzzle-img-2{
+    top: 259px;
+    left: -30px;
+}
+.puzzle-img-3{
+    right: 0;
+    bottom: 0;
+}
+
+.advant-info{
+    width: 625px;
+}
+.section-name{
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 148px;
+    margin-left: -120px;
+    position: absolute;
+    font-family: 'Kharkiw Tone';
+}
+.info-content{
+    margin-top: 280px;
+}
+
+.visible-block{
+    border-top: 1px solid #141313;
+    padding: 28px 0;
+}
+.content-h{
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+    font-size: 22px;
+}
+.content-h span{
+    margin-right: 15px;
+    padding-left: 30px;
+}
+.show-content{
+    width: 24px;
+    height: 24px;
+    padding-right: 28px;
+}
