@@ -104,4 +104,5 @@
     width: 24px;
     height: 24px;
     padding-right: 28px;
+    overflow: hidden;
 }
