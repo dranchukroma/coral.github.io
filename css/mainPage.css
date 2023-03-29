@@ -292,7 +292,6 @@
     color: rgb(20, 19, 19);
 }
 .buttonSent:hover{
-    transition: all 300ms;
     background-color: #CEBEB8;
     color: rgb(20, 19, 19, 50);
 }

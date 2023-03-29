@@ -47,7 +47,6 @@ function getList(){
 //Display list
 function displayList(){
     let list = getList();
-    console.log(list);
 }
 
 
