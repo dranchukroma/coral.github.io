@@ -222,12 +222,13 @@ function changeToStyle3(){
     $('#js-colorToChange').animate({
         opacity: '1',
     }, 300);
-
 }
+//OnHover
 function hoverLinks(onHoverElement, choverElement){
     $(onHoverElement).hover(function(){
         $(this).children('a').children(choverElement).stop().animate({ opacity: 1 }, 200);
         }, function() {
         $(this).children('a').children(choverElement).stop().animate({ opacity: 0.7 }, 200);
+        console.log('done');
     });
-}
+  }

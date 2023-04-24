@@ -15,7 +15,7 @@ function navigation(navigationElement){
         if(e.originalEvent.wheelDelta >=0){
             $(navigationElement).css({'top': '0px'});
         }
-        else if($(window).scrollTop() > $('.header').height()){
+        else if($(window).scrollTop() > $('header').height()){
             $(navigationElement).css({'top': ('-' + ($(navigationElement).height() + 30) + 'px')});
         }
     })
@@ -48,9 +48,6 @@ function getList(){
 function displayList(){
     let list = getList();
 }
-
-
-
 
 //Change input value on 
 function inputNull(inputID, doIfHaveClass, inputVal){

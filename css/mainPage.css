@@ -158,14 +158,6 @@
 .recH3 h3{
     font-weight: 400;
 }
-.card{
-    width: 407px;
-    margin: 0 auto;
-    font-family: "Montserrat";
-}
-.cardImg{
-    margin-bottom: 30px;
-}
 .cardImg-1{
     background: url("../img/mainPage/1stCardImg.png") no-repeat;
 }
@@ -177,48 +169,6 @@
 }
 .cardImg-4{
     background: url("../img/mainPage/2ndCardImg.png") no-repeat;
-}
-.cardImgHover{
-    width: 405px;
-    height: 508px;
-    background-color: rgb(255, 255, 255, 0.8);
-    justify-content: center;
-    font-size: 24px;
-    font-family: 'Kharkiw Tone';
-    border: 1px #141313 solid;
-    opacity: 0;
-    transition: all 300ms;
-}
-.cardImgHover:hover{
-    opacity: 1;
-}
-.cardTitle{
-    margin-bottom: 16px;
-}
-.cardTitle, .cardPriceWrapper{
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.arrows{
-    width: 78px;
-    margin-right: 10px;
-    margin-left: auto;
-    margin-top: 45px;
-    position: relative;
-}
-.arrow svg{
-    cursor: pointer;
-    height: 24px;
-    transition: all 200ms;
-}
-.animation-arrow-right{
-    position: absolute;
-    right: 0px;
-}
-.animation-arrow-left{
-    position: absolute;
-    left: 0px;
 }
 
 /* Links */

@@ -1,0 +1,167 @@
+/* Header */
+.news-header{
+    width: 100%;
+    height: 489px;
+    background: url(../img/newsPage/newsHeader.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto 135px;
+    text-align: center;
+}
+.header-text h1{
+    padding-top: 275px;
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+}
+
+/* Summer sale */
+.summerSale{
+    text-align: center;
+}
+.summerSale h2{
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.cardImg{
+    position: relative;
+}
+.sale-block{
+    position: absolute;
+    z-index: 1;
+    background-color: #EEEEEE;
+    width: 55px;
+    height: 40px;
+    justify-content: center;
+    transition: all 200ms;
+}
+.sale-block:hover{
+    border-left: #141313 1px solid;
+    border-top: #141313 1px solid;
+}
+.sale-block div p{
+    font-family: 'Montserrat';
+    color: #141313;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cardImg-1{
+    background: url("../img/newsPage/slide-1.png") no-repeat;
+}
+.cardImg-2{
+    background: url("../img/newsPage/slide-2.png") no-repeat; 
+}
+.cardImg-3{
+    background: url("../img/newsPage/slide-3.png") no-repeat;
+}
+
+/* Children */
+.children{
+    margin-top: 98px;
+}
+.children.flexRow{
+    align-items: start;
+}
+.poster-1, .poster-3{
+    width: 407px;
+}
+.poster-2{
+    width: 406px;
+    height: 982px;
+}
+.poster-3{
+    height: 982px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster-title{
+    font-family: 'Kharkiv Tone';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: #141313;
+}
+.poster-text{
+    font-family: 'Montserrat';
+    line-height: 28px;    
+    color: #141313;
+    margin-top: 39px;
+}
+.poster-2 img{
+    margin-top: 30px;
+}
+.poster-3 h3{
+    font-size: 18;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    margin: 28px 0 30px 0;
+}
+.to-years{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 21.94px;
+    font-weight: 400;
+}
+.bonder-price{
+    margin-top: 20px;
+    font-weight: 500;
+}
+.poster-icons-wrapper{
+    display: flex;
+}
+.iconLike, .iconBasket{
+    widows: 24px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+
+/* New collection */
+.title-wrapper{
+    margin: 142px 0 39px 0;
+    align-items: end;
+}
+.title h1{
+    font-family: 'Kharkiv Tone';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: #141313;
+}
+.about-title p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+.collectionPhotos .top-Photos{
+    margin-bottom: 30px;
+}
+
+/* #colorstyle */
+.colorStyle .title-wrapper{
+    margin-top: 125px;
+}
+
+.show-more-container{
+    margin: 66px auto 0;
+    width: 104px;
+}
+.show-more{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    border-bottom: #141313 solid 0.5px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    margin-top: 40px;
+}
