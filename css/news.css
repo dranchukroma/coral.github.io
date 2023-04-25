@@ -35,9 +35,11 @@
     width: 55px;
     height: 40px;
     justify-content: center;
-    transition: all 200ms;
+    transition: all 150ms;
+    border-left: #EEEEEE 1px solid;
+    border-top: #EEEEEE 1px solid;
 }
-.sale-block:hover{
+.sale-block-hover{
     border-left: #141313 1px solid;
     border-top: #141313 1px solid;
 }

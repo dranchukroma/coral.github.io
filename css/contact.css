@@ -1,0 +1,57 @@
+/* Main section */
+h1{
+    margin: 170px 0 52px 0;
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Montserrat';
+    line-height: 18px;    
+    color: #141313;
+}
+
+.colarData{
+    display: flex;
+}
+
+.left-side{
+    margin: 0 99px 45px 0;
+}
+
+.topLine{
+    margin-bottom: 35px;
+}
+
+.bond{
+    font-weight: 500;
+    margin-right: 1.3em;
+}
+
+
+.feedbackForm{
+    padding: 30px;
+    margin-top: 170px;
+    width: 367px;
+    height: 456px;
+    border: #141313 0.5px solid;
+}
+h2{
+    margin-bottom: 39px;
+    font-family: 'Kharkiv Tone';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+input{
+    width: 367px;
+    border-bottom: #141313 1px solid;
+    padding: 15px 0;
+    font-family: 'Montserrat';
+    line-height: 18px;    
+}
+.name, .surname{
+    margin-bottom: 10px;
+}
