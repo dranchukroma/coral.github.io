@@ -83,42 +83,53 @@
 
     <section class="main-section container flexRow">
         <div class="contactData">
-            <h1>
-                Contacts
-            </h1>
-            <div class="colarData">
-                <div class="left-side">
-                    <p class="topLine">
-                        <span class="bond">Phone number:</span>+380 97 61 35 049
-                    </p>
-                    <p>
-                        <span class="bond">Address:</span>Kyiv, Volodymyrska, 46,
-                    </p>
-                </div>
-                <div class="right-side">
-                    <p class="topLine">
-                        <span class="bond">Email:</span>colar.shop@gmail.com
-                    </p>
-                    <p>
-                        <span class="bond">Work time:</span>mon-sun: 8:00-21:00
-                    </p>
+            <div>
+                <h1>
+                    Contacts
+                </h1>
+                <div class="colarData">
+                    <div class="left-side">
+                        <p class="topLine">
+                            <span class="bond">Phone number:</span>+380 97 61 35 049
+                        </p>
+                        <p>
+                            <span class="bond">Address:</span>Kyiv, Volodymyrska, 46,
+                        </p>
+                    </div>
+                    <div class="right-side">
+                        <p class="topLine">
+                            <span class="bond">Email:</span>colar.shop@gmail.com
+                        </p>
+                        <p>
+                            <span class="bond">Work time:</span>mon-sun: 8:00-21:00
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.6177021323733!2d21.00367219997594!3d52.23164079220944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c92692e49%3A0xc2e97ae5311f2dc2!2z0J_QsNC70LDRhiDQutGD0LvRjNGC0YPRgNC4INGWINC90LDRg9C60Lg!5e0!3m2!1suk!2spl!4v1682453064164!5m2!1suk!2spl" width="823" height="294" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.6177021323733!2d21.00367219997594!3d52.23164079220944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc8c92692e49%3A0xc2e97ae5311f2dc2!2z0J_QsNC70LDRhiDQutGD0LvRjNGC0YPRgNC4INGWINC90LDRg9C60Lg!5e0!3m2!1suk!2spl!4v1682453064164!5m2!1suk!2spl" width="823" height="305" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <div class="feedbackForm">
             <h2>
                 Feedback form
             </h2>
-            <form action="#" onsubmit="return false">
-            <input value="Name" type="text" class="name">
-            <input value="Surname" type="text" class="surname">
-            <input value="Email" type="email">
-            <input value="Comment" type="text">
-            <input type="checkbox">
-            <input class="sent-button" type="submit">
+            <form class="input feedback" action="#" onsubmit="return false">
+            <input placeholder="Name" type="text" class="input name">
+            <input placeholder="Surname" type="text" class="input surname">
+            <input class="input" placeholder="Email" type="email">
+            <input class="input comment" placeholder="Comment" type="text">
+            <div class="checkboxWrapper">
+                <div>
+                    <input type="checkbox">
+                </div>
+                <div>
+                    <p class="checkBoxText">
+                        I agree to the terms of the Privacy Policy
+                    </p>
+                </div>
+            </div>
+            <input class="input sent-button" value="Sent" type="submit">
             </form>
         </div>
     </section>
