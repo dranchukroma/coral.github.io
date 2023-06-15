@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    // $(window).on('beforeunload', function(){
+    //     $(window).scrollTop(0);
+    //     console.log('work')
+    // });
     navigation('.navigation');
     addingToList('.addedCardsBasket', '.forSale', 'basket');
     inputNull('#js-inputSearch', '.hiddenPopUp', '');
@@ -6,8 +10,6 @@ $(document).ready(function(){
     showHidePopUp('none', '#js-search', '.search-results');
     displayList();
 });
-
-
 // Navigation
 function navigation(navigationElement){
     //Hide and show navigation on wheel
@@ -87,3 +89,15 @@ function showHidePopUp(hideEl, showEl, popUpEl){
 }
 //??Atributes for making cards
 // articleNumber, color, size, counts, price, image
+
+
+
+//Saving scroll position in session scroling
+function saveScrollPosition(){
+    sessionStorage.setItem('scrollPosition', $(window).scrollTop());
+}
+//Retrieve scroll position fromn session scroling
+function getSavedScrollPosition(){
+    return parseInt(sessionStorage.getItem('scrollPosition')) || 0;
+}
+

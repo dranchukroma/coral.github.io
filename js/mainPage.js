@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    // makeOpacityZero('.wrapperHimHer');
+    // makeOpacityOne('.wrapperHimHer', 300, ($('.wrapperHimHer').offset().top) - 300);
     timerToHeader(7000);
     hoverLinks('.box', '.hoverLink');
 });
@@ -231,4 +233,22 @@ function hoverLinks(onHoverElement, choverElement){
         $(this).children('a').children(choverElement).stop().animate({ opacity: 0.7 }, 200);
         console.log('done');
     });
-  }
+}
+
+
+
+//OnLoad animation
+// function makeOpacityZero(elementClass){
+//     $(elementClass).css({
+//         'opacity':'0'
+//     });
+// }
+// function makeOpacityOne(elementClass, speed, pxFromTop){
+//     $(window).on('scroll', function(){
+//         if($(window).scrollTop() >= pxFromTop){
+//             $(elementClass).animate({
+//                 opacity: 1,
+//             }, speed);
+//         }
+//     });
+// }
