@@ -1,0 +1,208 @@
+/* Header */
+.header-about{
+    width: 1280px;
+    height: 489px;
+    background: url(../img/aboutPage/aboutHeader.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto 135px;
+    text-align: center;
+}
+.header-text h1{
+    padding-top: 275px;
+    font-size: 32px;
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+}
+
+/* Links */
+.aboutUs-links{
+    align-items: flex-start;
+    margin-bottom: 42px;
+}
+.aboutLink-block .img-link-block{
+    width: 298px;
+}
+.text-link-block{
+    display: inline-block;
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.img-link-block-1{
+    background: url(../img/aboutPage/linkHover-1.png);
+    height: 562px;
+}
+.img-link-block-2{
+    background: url(../img/aboutPage/linkHover-2.png);
+    height: 388px;
+}
+.img-link-block-3{
+    background: url(../img/aboutPage/linkHover-3.png);
+    height: 562px;
+}
+.img-link-block-4{
+    background: url(../img/aboutPage/linkHover-4.png);
+    height: 388px;
+}
+
+/* Advantages */
+.advantages .flexRow{
+    align-items: flex-start;
+}
+
+.puzzle-img-block{
+    width: 635px;
+    height: 800px;
+    position: relative;
+}
+.puzzle-img{
+    position: absolute;
+}
+.puzzle-img-1{
+    top: 0;
+    right: 155px;
+}
+.puzzle-img-2{
+    top: 259px;
+    left: -30px;
+}
+.puzzle-img-3{
+    right: 0;
+    bottom: 0;
+}
+
+.advant-info{
+    width: 625px;
+}
+.section-name{
+    font-size: 32px;
+    font-weight: 400;
+    padding-top: 148px;
+    margin-left: -120px;
+    position: absolute;
+    font-family: 'Kharkiw Tone';
+}
+.info-content{
+    margin-top: 280px;
+}
+
+.visible-block{
+    border-top: 1px solid #141313;
+    padding: 28px 0;
+}
+.content-h{
+    font-family: 'Kharkiw Tone';
+    font-weight: 400;
+    font-size: 22px;
+}
+.content-h span{
+    margin-right: 15px;
+    padding-left: 30px;
+}
+.show-content{
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    padding-right: 28px;
+}
+.plus-container{
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+.plus-horizontal, .plus-vertical{
+position: absolute;
+background-color: black;
+border-radius: 10px;
+transition: all 300ms;
+}
+.plus-horizontal{
+width: 14px;
+height: 1px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.plus-vertical{
+width: 1px;
+height: 14px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.content-text{
+    padding: 0px 0px 24px 95px;
+}
+.content-text p{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Montserrat";
+}
+
+/* Puzzle */
+
+.puzzle-container-vertical{
+    width: 100%;
+    height: 804px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 154px;
+}
+.puzzle-Element{
+    width: 407px;
+    height: 248px;
+}
+.puzzle-El-1{
+    background: url(../img/aboutPage/2ndPuzzleType-1.png) no-repeat center;
+}
+.puzzle-El-2{
+    background: url(../img/aboutPage/2ndPuzzleType-2.png) no-repeat center;
+}
+.puzzle-El-3{
+    background: url(../img/aboutPage/2ndPuzzleType-3.png) no-repeat center;
+}
+.puzzle-El-4{
+    background: url(../img/aboutPage/2ndPuzzleType-4.png) no-repeat center;
+}
+.puzzleHeader h4{
+    font-family: 'Kharkiw Tone';
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    line-height: 22.2px;
+}
+.puzzleText p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    line-height: 28px;
+}
+.puzzleButton{
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px #141313 solid;
+    margin-top: 4px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.puzzleButton:hover{
+    background-color: #CEBEB8;
+    color: rgb(20, 19, 19, 50);
+}
+.puzzle-El-6{
+    background: url(../img/aboutPage/2ndPuzzleType-5.png) no-repeat center;
+}
+.puzzle-El-7{
+    background: url(../img/aboutPage/2ndPuzzleType-6.png) no-repeat center;
+}
+.puzzle-El-8{
+    background: url(../img/aboutPage/2ndPuzzleType-7.png) no-repeat center;
+}
+.puzzle-El-9{
+    background: url(../img/aboutPage/2ndPuzzleType-8.png) no-repeat center;
+}

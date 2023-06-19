@@ -1,0 +1,114 @@
+p{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-weight: 500;
+}
+/* Filters */
+.filters{
+    margin: 170px 0 76px 0;
+    padding: 31px 60px;
+    border: 1px #141313 solid;
+}
+.show-Arrow{
+    width: 12px;
+    height: 12px;
+    padding-left: 10px;
+    margin-right: 85px;
+}
+.svgArrow{
+    transform: rotate(-90deg);
+    transition: transform 300ms;
+}
+.rotateArrow{
+    transform: rotate(0deg);
+    fill: #141313;
+}
+.categories-w.flexRow div{
+    cursor: pointer;
+    user-select: none;
+}
+.categories-w.flexRow, .filters-setting-wrapper.flexRow{
+    justify-content: start;
+}
+
+.filter-block{
+    border: #141313 1px solid;
+    background-color: white;
+    padding: 30px;
+    position: absolute;
+}
+.filter-block .checkboxWrapper p{
+    font-size: 16px;
+}
+.filter-block .checkboxWrapper{
+    margin-bottom: 30px;
+}
+.filter-block .checkboxWrapper:last-of-type{
+    margin-bottom: 0px;
+}
+.filter-block input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+}
+
+.from-t, .to-t{
+    margin-bottom: 15px;
+}
+.fromPrice, .toPrice{
+    border: #141313 solid 1px;
+    width: 92px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.fromPrice{
+    margin-bottom: 30px;
+}
+
+
+
+
+.checkboxWrapper{
+    display: flex;
+    align-items: center;
+}
+.checkboxWrapper p{
+    margin-left: 20px;
+}
+
+/* Items */
+.item{
+    margin-bottom: 72px;
+}
+.catalog-img{
+    margin-bottom: 30px;
+}
+.item-name p{
+    margin-bottom: 16px;
+}
+.iconLike{
+    margin-bottom: 4px;
+}
+
+.pages, #page-counting{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.pages-wrapper{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.arrowLeft, .arrowRight{
+    height: 24px;
+    width: 24px;
+}
+.page-count{
+    width: 20px;
+    text-align: center;
+    margin: 0 3px;
+}
+.activePage{
+    background-size: 100% 1px;
+}
