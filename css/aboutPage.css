@@ -19,8 +19,33 @@
     align-items: flex-start;
     margin-bottom: 42px;
 }
-.aboutLink-block .img-link-block{
+.aboutLink-block{
+    cursor: pointer;
     width: 298px;
+    position: relative;
+}
+.hiddenInfo{
+    position: absolute;
+    margin: 0px 13px 0px 2px;
+}
+.hiddenInfo-header h2{
+    color: #141313;
+    font-size: 24px;
+    font-family: 'Kharkiw Tone';
+    margin-bottom: 25px;
+}
+.hiddenInfo-header hr{
+    margin-bottom: 30px;
+}
+
+.hiddenInfo-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+.hiddenInfo-text{
+    font-family: "Montserrat";
 }
 .text-link-block{
     display: inline-block;
@@ -28,6 +53,15 @@
     font-weight: 400;
     font-size: 16px;
     margin-top: 10px;
+}
+.hiddenInfo-instagram{
+    border-bottom: #141313 1px solid;
+}
+.button-right{
+    margin-left: 20px;
+}
+.img-link-block{
+    /* opacity: 0; */
 }
 .img-link-block-1{
     background: url(../img/aboutPage/linkHover-1.png);

@@ -15,7 +15,7 @@ $(document).ready(function(){
             $("#page-counting").append($('<div class="page-count LinkHover"  id="page-' + i + '" ><p>' + i + '</p></div>'));
         }
     }
-
+    
     //Take all items from catalog
     var allItems = $('.item').toArray();
     //Delete all items from catalog
@@ -87,8 +87,6 @@ $(document).ready(function(){
         else{
             $('.items-wrapper').append('<div class="noItems" style="text-align: center; margin: 200px 0;"><p>No items</p></div>');
         }
-
-        
     }
 
     //Show filters
