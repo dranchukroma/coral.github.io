@@ -1,4 +1,5 @@
-$(document).ready(function(){    
+$(document).ready(function(){
+  //Slider setting   
     $('.cards').slick({
         infinite: true,
         slidesToShow: 3,
@@ -6,15 +7,16 @@ $(document).ready(function(){
         accessibility: false,
         arrows: false,
     });
+    //Changing arrow buttons
     $('.prev-slide').click(function() {
         $('.cards').slick('slickPrev');
       });
-    
       $('.next-slide').click(function() {
         $('.cards').slick('slickNext');
       });
       sliderArrowAnimation();
 });
+//Adding animation for arrows
 function sliderArrowAnimation(){
   $('.arrow').click(function(){
       if($(this).hasClass('prev-slide')){
