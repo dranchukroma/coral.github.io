@@ -42,10 +42,25 @@ $(document).ready(function(){
     $('.page-count').click(function(){returnPage($(this))});
     //Changing page by arrows
     $('.arrowLeft').click(function(){
-
+        var numberOfActualPage = $('.activePage').attr('id').match(/\d+/g);
+        if(numberOfActualPage == 1){
+            var nextPage = '#page-4';
+        }
+        else{
+            var nextPage = '#page-' + (Number(numberOfActualPage) - 1);
+        }
+        returnPage($(nextPage));
     });
     $('.arrowRight').click(function(){
-
+        var pageCounter = $('.page-count').length;
+        var numberOfActualPage = $('.activePage').attr('id').match(/\d+/g);
+        if(numberOfActualPage == pageCounter){
+            var nextPage = '#page-1';
+        }
+        else{
+            var nextPage = '#page-' + (Number(numberOfActualPage) + 1);
+        }
+        returnPage($(nextPage));
     });
 
     //Function returns HTML code of chosen page
