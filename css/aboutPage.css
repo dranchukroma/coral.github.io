@@ -1,3 +1,6 @@
+p{
+    cursor: default;
+}
 /* Header */
 .header-about{
     width: 1280px;
@@ -18,9 +21,9 @@
 .aboutUs-links{
     align-items: flex-start;
     margin-bottom: 42px;
+    /* cursor: default; */
 }
 .aboutLink-block{
-    cursor: pointer;
     width: 298px;
     position: relative;
 }
@@ -42,10 +45,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 300px;
+    height: 350px;
 }
 .hiddenInfo-text{
     font-family: "Montserrat";
+    line-height: 28px;
 }
 .text-link-block{
     display: inline-block;
@@ -60,8 +64,12 @@
 .button-right{
     margin-left: 20px;
 }
-.img-link-block{
-    /* opacity: 0; */
+.button-right, .button-left{
+    transition: all 300ms;
+    cursor: pointer;
+}
+.button-right:hover, .button-left:hover{
+    opacity: 0.7;
 }
 .img-link-block-1{
     background: url(../img/aboutPage/linkHover-1.png);
