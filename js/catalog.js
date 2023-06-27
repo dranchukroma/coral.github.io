@@ -1,8 +1,10 @@
-$(document).ready(function(){
-    //How much item will be visible on 1 page
+$(document).ready(() =>{
+    //Set how much elements will visible on 1 page
     const itemOnPage = 12;
-    //Page counting based on items number
+    //Page counting based on items counts
     var pages = Math.floor($('.item').length / itemOnPage);
+
+
 
     //Set items number on page
     $('#js-item-found').text($('.item').length);
@@ -16,12 +18,15 @@ $(document).ready(function(){
         }
     }
     
-    //Take all items from catalog
+    //Save alll items in variable 
     var allItems = $('.item').toArray();
+
     //Delete all items from catalog
     $('.items-wrapper').html('');
-    //Object element to save items sorted by pages
+
+    //Object to saving items sorted by pages
     var itemsSortedByPages = {};
+
     //Loop adds all items to object and sorts it by pages
     for(var i = 0; i < pages; i++){
         //Creating empty pages i
@@ -36,12 +41,16 @@ $(document).ready(function(){
             }
         }
     }
+
     //Adding items from page 1
     returnPage($('#page-1'));
-    //On click page-count
+
+    //Changing page by click on page-number
     $('.page-count').click(function(){returnPage($(this))});
-    //Changing page by arrows
+    
+    //Changing pages by arrows
     $('.arrowLeft').click(function(){
+        //Get only numbers from actual page ID
         var numberOfActualPage = $('.activePage').attr('id').match(/\d+/g);
         if(numberOfActualPage == 1){
             var nextPage = '#page-4';
@@ -52,6 +61,7 @@ $(document).ready(function(){
         returnPage($(nextPage));
     });
     $('.arrowRight').click(function(){
+        //Get only numbers from actual page ID
         var pageCounter = $('.page-count').length;
         var numberOfActualPage = $('.activePage').attr('id').match(/\d+/g);
         if(numberOfActualPage == pageCounter){
@@ -63,7 +73,7 @@ $(document).ready(function(){
         returnPage($(nextPage));
     });
 
-    //Function returns HTML code of chosen page
+    //Function adds HTML code of chosen page in catalog
     function returnPage(pageClicked){
         //Removing class 'active' from all page-count`s
         $('.page-count').removeClass('activePage');
@@ -71,36 +81,27 @@ $(document).ready(function(){
         $(pageClicked).addClass('activePage');
         //Set pageClicked id to pageNumver
         var pageNumber = pageClicked.attr('id');
-        //In num leave only numbers
-        var num = pageNumber.match(/\d+/g);
-        //Creating string for saving numberPage
-        var numberOfPage = '';
-        //Check if num is not null
-        num !== null ? numberOfPage = parseInt(num.join('')) : numberOfPage = 0;
+        //Set number of pages in variable
+        var numberOfPage = parseInt(pageNumber.match(/\d+/g)?.join('')) || 0;
         //onePageItems will contain items only from one page
         var onePageItems = [...itemsSortedByPages[numberOfPage - 1]];
         //HTML code of sorted pages
         var HTMLpage = '';
+
         // Adding every element to HTMLpage
-        for(var i = 0; i < (itemOnPage / 3); i++){
-            //Adding 3 elements to the helpElement
-            var helpElement = '';
-            for(var j = 0; j < 3; j++){
-                helpElement += onePageItems[0].outerHTML;
-                onePageItems.shift();
-            }
+        for(var i = 0; i < itemOnPage / 3; i++){
+            var helpElement = onePageItems.splice(0, 3).map(item => item.outerHTML).join('');
             //Adding helpElement to the wrapper
             var itemsWrapper = $('<div class="items flexRow">' + helpElement + '</div>');
             //Adding all wrappers to the HTMLpage
             HTMLpage += itemsWrapper.get(0).outerHTML;
         }
         //Returning data
-        if(HTMLpage != ''){
-            $('.items-wrapper').html('');
-            $('.items-wrapper').append(HTMLpage);
+        if(HTMLpage){
+            $('.items-wrapper').empty().append(HTMLpage);
         }
         else{
-            $('.items-wrapper').append('<div class="noItems" style="text-align: center; margin: 200px 0;"><p>No items</p></div>');
+            $('.items-wrapper').html('<div class="noItems" style="text-align: center; margin: 200px 0;"><p>No items</p></div>');
         }
     }
 
@@ -115,9 +116,9 @@ $(document).ready(function(){
           //Remove class active
           $('.filter').removeClass('active');
         }
-      });
+    });
+    //Show filter on click
     $('.categories-w').click(function(){
-        //If .filter don`t have class active
         if(!$(this).parent('.filter').hasClass('active')){
             //Hide all filters
             $('.filter').find('.filter-block').stop().slideUp();
@@ -132,7 +133,6 @@ $(document).ready(function(){
             //Rotate arrow for clicked filter
             $(this).parent('.filter').find('.svgArrow').addClass('rotateArrow');
         }
-        //If .filter have class active
         else{
             //Hide all filters
             $('.filter').find('.filter-block').stop().slideUp();

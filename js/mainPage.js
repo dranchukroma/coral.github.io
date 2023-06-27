@@ -1,55 +1,61 @@
-$(document).ready(function(){
-    // makeOpacityZero('.wrapperHimHer');
-    // makeOpacityOne('.wrapperHimHer', 300, ($('.wrapperHimHer').offset().top) - 300);
-    timerToHeader(7000);
-    hoverLinks('.box', '.hoverLink');
-    changingOnClickHeader();
-});
-//Timer to changing header
-function timerToHeader(changingTime){
-    var changingInterval = setInterval(function(){
+$(document).ready(() => {
+    //Set time to changing header
+    const timeToChangingHeader = 7000;
+
+
+    
+    //Changing header by intervar
+    var changingHeaderSlides = setInterval(function(){
         if($('#js-dot-1').hasClass('dotActive')){
-            changeToStyle2();
+            changeToSlide2();
         }
         else if($('#js-dot-2').hasClass('dotActive')){
-            changeToStyle3();
+            changeToSlide3();
         }
         else if($('#js-dot-3').hasClass('dotActive')){
-            changeToStyle1();
+            changeToSlide1();
         }
-    }, changingTime)
+    }, timeToChangingHeader)
+
+    //When paint wrapper is hover stop changing header, when paint wrapper is not hover start new interval
     $('.paintWrapper').hover(function(){
-        clearInterval(changingInterval);
+        clearInterval(changingHeaderSlides);
     }, function(){
-        changingInterval = setInterval(function(){
+        changingHeaderSlides = setInterval(function(){
             if($('#js-dot-1').hasClass('dotActive')){
-                changeToStyle2();
+                changeToSlide2();
             }
             else if($('#js-dot-2').hasClass('dotActive')){
-                changeToStyle3();
+                changeToSlide3();
             }
             else if($('#js-dot-3').hasClass('dotActive')){
-                changeToStyle1();
+                changeToSlide1();
             }
-        }, changingTime)
+        }, timeToChangingHeader)
     });
-}
-//Changing header
-function changingOnClickHeader(){
+
+    //Change opacity on hover blocks "About us", "Instagram" and "#colarstyle"
+    $('.box').hover(function(){
+        $(this).find('.hoverLink').stop().animate({ opacity: 1 }, 200);
+        }, function() {
+        $(this).find('.hoverLink').stop().animate({ opacity: 0.7 }, 200);
+    });
+
+    //Function can change style of header by click on dots
     $('.dot').on('click', function(){
-        var checkElement = $(this).attr("id")
-        if(checkElement == 'js-dot-1'){
-            changeToStyle1();
+        if($(this).attr("id") == 'js-dot-1'){
+            changeToSlide1();
         }
-        else if(checkElement == 'js-dot-2'){
-            changeToStyle2();
+        else if($(this).attr("id") == 'js-dot-2'){
+            changeToSlide2();
         }
-        else if(checkElement == 'js-dot-3'){
-            changeToStyle3();
+        else if($(this).attr("id") == 'js-dot-3'){
+            changeToSlide3();
         }
     });
-}
-function changeToStyle1(){
+});
+//Function changes to 1 slide
+function changeToSlide1(){
     //Changing dots status Active/noActive
     $('#js-dot-1').addClass('dotActive');
     $('#js-dot-2').removeClass('dotActive');
@@ -108,7 +114,8 @@ function changeToStyle1(){
         opacity: '1',
     }, 300);
 }
-function changeToStyle2(){
+//Function changes to 2 slide
+function changeToSlide2(){
     //Changing dots status Active/noActive
     $('#js-dot-1').removeClass('dotActive');
     $('#js-dot-2').addClass('dotActive');
@@ -167,7 +174,8 @@ function changeToStyle2(){
         opacity: '1',
     }, 300);
 }
-function changeToStyle3(){
+//Function changes to 3 slide
+function changeToSlide3(){
     //Changing dots status Active/noActive
     $('#js-dot-1').removeClass('dotActive');
     $('#js-dot-2').removeClass('dotActive');
@@ -225,12 +233,4 @@ function changeToStyle3(){
     $('#js-colorToChange').animate({
         opacity: '1',
     }, 300);
-}
-//OnHover
-function hoverLinks(onHoverElement, choverElement){
-    $(onHoverElement).hover(function(){
-        $(this).children('a').children(choverElement).stop().animate({ opacity: 1 }, 200);
-        }, function() {
-        $(this).children('a').children(choverElement).stop().animate({ opacity: 0.7 }, 200);
-    });
 }
