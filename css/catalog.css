@@ -1,7 +1,6 @@
 p{
     font-family: "Montserrat";
     font-size: 18px;
-    font-weight: 500;
 }
 /* Filters */
 .filters{
@@ -99,7 +98,9 @@ p{
     display: flex;
     align-items: center;
     margin: 0 auto;
+    position: relative;
 }
+
 .arrowLeft, .arrowRight{
     height: 24px;
     width: 24px;

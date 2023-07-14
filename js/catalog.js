@@ -49,7 +49,7 @@ $(document).ready(() =>{
     $('.page-count').click(function(){returnPage($(this))});
     
     //Changing pages by arrows
-    $('.arrowLeft').click(function(){
+    $('.arrow-left').click(function(){
         //Get only numbers from actual page ID
         var numberOfActualPage = $('.activePage').attr('id').match(/\d+/g);
         if(numberOfActualPage == 1){
@@ -60,7 +60,7 @@ $(document).ready(() =>{
         }
         returnPage($(nextPage));
     });
-    $('.arrowRight').click(function(){
+    $('.arrow-right').click(function(){
         //Get only numbers from actual page ID
         var pageCounter = $('.page-count').length;
         var numberOfActualPage = $('.activePage').attr('id').match(/\d+/g);

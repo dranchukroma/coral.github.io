@@ -9,6 +9,9 @@
     <!-- Favicon -->
     <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="favicon.ico" rel="icon">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="../css/slider.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1835,20 +1838,26 @@
         </div>
         <div class="pages" id="js-pages" style="opacity: 0;">
             <div class="pages-wrapper">
-                <div class="arrowLeft">
+                <div class="arrow arrow-left prev-slide">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 18L9 12L15 6" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                    
+                        <path d="M15 18L9 12L15 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>      
+                    <svg class="animation-arrow animation-arrow-left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                          
                 </div>
                 <div class="pageNumber">
                     <div id="page-counting">
 
                     </div>
                 </div>
-                <div class="arrowRight">
+                <div class="arrow arrow-right next-slide">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="#141313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                    
+                        <path d="M9 18L15 12L9 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg class="animation-arrow animation-arrow-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
                 </div>
             </div>
         </div>
@@ -2022,5 +2031,9 @@
     <script src="../js/index.js"></script>
     <!-- Catalog JS file -->
     <script src="../js/catalog.js"></script>
+    <!-- Slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--JS file for slider-->
+    <script src="../js/slider.js"></script>
 </body>
 </html>

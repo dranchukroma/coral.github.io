@@ -30,37 +30,25 @@ $(document).ready(() => {
         $(this).find('.LinkHover').removeClass('LinkHovered');
     });
 
-    //Show info block when clicking on a card
+    // Show info block when clicking on a card
     $('.aboutLink-block').click(function(){
         if(!$(this).hasClass('active')){
             // Hide all info blocks
             $('.aboutLink-block').removeClass('active');
-            $('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '1',
-            }, 300, function(){
-                $(this).css('display', 'block');
-            });
-            $('.hiddenInfo').animate({opacity : "0"}, 300)
+            $('.aboutLink-block').find('.aboutLink-block-wrapper').stop().fadeIn(300);
+            $('.aboutLink-block').find('.hiddenInfo').stop().animate({opacity: '0'}, 300)
             // Show info block that was just clicked
             $(this).addClass('active');
-            $(this).find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(this).find('.hiddenInfo').animate({opacity: '1'}, 300);
+            $(this).find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $(this).find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
         else{
             // Hide just clicked block
             $(this).removeClass('active');
-            $(this).find('.aboutLink-block-wrapper').animate({
-                opacity: '1',
-            }, 300, function(){
-                $(this).css('display', '');
-            });
-            $(this).find('.hiddenInfo').animate({opacity: '0'}, 300);
+            $(this).find('.aboutLink-block-wrapper').stop().fadeIn(300);
+            $(this).find('.hiddenInfo').stop().animate({opacity: '0'}, 300)
         }
-    });
+    }); 
 
     //Hide if clicked not on cards
     $(document).on('click', function(event) {
@@ -68,105 +56,59 @@ $(document).ready(() => {
         if (!target.closest('.aboutLink-block').length) {
             // Hide all info blocks
             $('.aboutLink-block').removeClass('active');
-            $('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '1',
-            }, 300, function(){
-                $(this).css('display', 'block');
-            });
-            $('.hiddenInfo').animate({opacity : "0"}, 300)
+            $(this).find('.aboutLink-block-wrapper').fadeIn(300);
+            $(this).find('.hiddenInfo').animate({opacity: '0'}, 300)
         }
-      });
+    });
 
     //Show next info block
     $('.button-right').click(function(){
         //Set which card was clicked
-        var actualHiddenInfo = $(this).closest('.aboutLink-block').find('.hiddenInfo').attr('id');
-        //Changing info blocks by arrow right
-        if(actualHiddenInfo == 'js-hiddenInfo-1'){
-            var nextInfoBlock = '#js-hiddenInfo-2'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        var actualHiddenInfo = $(this).closest('.aboutLink-block').attr('id');
+        if(actualHiddenInfo == 'js-aboutLink-block-4'){
+            $('#js-aboutLink-block-1').addClass('active');
+            $('#js-aboutLink-block-1').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-1').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
-        else if(actualHiddenInfo == 'js-hiddenInfo-2'){
-            var nextInfoBlock = '#js-hiddenInfo-3'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        else if(actualHiddenInfo == 'js-aboutLink-block-3'){
+            $('#js-aboutLink-block-4').addClass('active');
+            $('#js-aboutLink-block-4').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-4').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
-        else if(actualHiddenInfo == 'js-hiddenInfo-3'){
-            var nextInfoBlock = '#js-hiddenInfo-4'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        else if(actualHiddenInfo == 'js-aboutLink-block-2'){
+            $('#js-aboutLink-block-3').addClass('active');
+            $('#js-aboutLink-block-3').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-3').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
-        else if(actualHiddenInfo == 'js-hiddenInfo-4'){
-            var nextInfoBlock = '#js-hiddenInfo-1'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        else if(actualHiddenInfo == 'js-aboutLink-block-1'){
+            $('#js-aboutLink-block-2').addClass('active');
+            $('#js-aboutLink-block-2').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-2').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
     });
     //Show previous info block
     $('.button-left').click(function(){
         //Set which card was clicked
-        var actualHiddenInfo = $(this).closest('.aboutLink-block').find('.hiddenInfo').attr('id');
-        //Changing info blocks by arrow left
-        if(actualHiddenInfo == 'js-hiddenInfo-1'){
-            var nextInfoBlock = '#js-hiddenInfo-4'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        var actualHiddenInfo = $(this).closest('.aboutLink-block').attr('id');
+        if(actualHiddenInfo == 'js-aboutLink-block-4'){
+            $('#js-aboutLink-block-3').addClass('active');
+            $('#js-aboutLink-block-3').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-3').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
-        else if(actualHiddenInfo == 'js-hiddenInfo-4'){
-            var nextInfoBlock = '#js-hiddenInfo-3'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        else if(actualHiddenInfo == 'js-aboutLink-block-3'){
+            $('#js-aboutLink-block-2').addClass('active');
+            $('#js-aboutLink-block-2').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-2').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
-        else if(actualHiddenInfo == 'js-hiddenInfo-3'){
-            var nextInfoBlock = '#js-hiddenInfo-2'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        else if(actualHiddenInfo == 'js-aboutLink-block-2'){
+            $('#js-aboutLink-block-1').addClass('active');
+            $('#js-aboutLink-block-1').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-1').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
-        else if(actualHiddenInfo == 'js-hiddenInfo-2'){
-            var nextInfoBlock = '#js-hiddenInfo-1'
-            $(nextInfoBlock).closest('.aboutLink-block').addClass('active');
-            $(nextInfoBlock).closest('.aboutLink-block').find('.aboutLink-block-wrapper').animate({
-                opacity: '0',
-            }, 300, function(){
-                $(this).css('display', 'none');
-            });
-            $(nextInfoBlock).closest('.aboutLink-block').find('.hiddenInfo').animate({opacity: '1'}, 300);
+        else if(actualHiddenInfo == 'js-aboutLink-block-1'){
+            $('#js-aboutLink-block-4').addClass('active');
+            $('#js-aboutLink-block-4').find('.aboutLink-block-wrapper').stop().fadeOut(300);
+            $('#js-aboutLink-block-4').find('.hiddenInfo').stop().animate({opacity: '1'}, 300)
         }
     });
 });

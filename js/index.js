@@ -16,13 +16,34 @@ $(document).ready(function(){
     })
 
     //Search input
-    showHidePopUp('none', '#js-search', '.search-results');
+    // showHidePopUp('none', '#js-search', '.search-results');
+
+    // $(document).on('click', function(event){
+    //     var target = $(event.target);
+    //     if(!target.closest('.popUp-Basket').length && !$('.popUp-Basket').hasClass('hiddenPopUp')){
+    //         $('.popUp-Basket').addClass('hiddenPopUp');
+    //         console.log('click not popup');
+    //     }
+    // });
+
+    $(document).on('click', function(event){
+        var target = $(event.target);
+        if($('.popUp-Basket').css('display') === 'block' && !target.closest('.popUp-Basket').lenght){
+            // $('.popUp-Basket').css('display', 'none');
+            console.log('not basket');
+        }
+    });
 
 //Basket
+    // hideOnClickNotPopUp('.popUp-Basket');
     addingToList('.addedCardsBasket', '.forSale', 'basket');
     showHidePopUp('.cross-popUp', '.popUp-Basket-icon', '.popUp-Basket');
-
 });
+
+//
+// Переробити функції які використовують .hiddenPoUp на використання .css() замість додавання класа + зробити перевірку на if(display: none);
+// 
+
 
 //Changing like and basket icon on click
 function addingToList(addTo, triggerClick, listName){
@@ -37,27 +58,48 @@ function addingToList(addTo, triggerClick, listName){
     });
 }
 
-//Show/Hide popUp on click
+// Show/Hide popUp on click
+// function showHidePopUp(hideEl, showEl, popUpEl){
+//     $(showEl).click(function(){
+//         $(popUpEl).toggleClass('hiddenPopUp');
+//     });
+
+//     $(hideEl).click(function(){
+//         $(popUpEl).addClass('hiddenPopUp');
+//     });
+// }
+//Function hide pop up when user clicked not on pop up, if it is opened
+// function hideOnClickNotPopUp(popUpEl){
+//     //Close PopUp when user clicked on not PopUp
+//     $(document).on('click', function(event){
+//         var target = $(event.target);
+//         if(!target.closest(popUpEl).length && !$(popUpEl).hasClass('hiddenPopUp')){
+//             $(popUpEl).addClass('hiddenPopUp');
+//         }
+//         console.log('hide not popup');
+
+//     });
+// }
+
+//Showing and hidign popUps without class
 function showHidePopUp(hideEl, showEl, popUpEl){
+    // $(showEl).click(function(){
+    //     $(popUpEl).css('display', 'none');
+    // });
     $(showEl).click(function(){
-        $(popUpEl).toggleClass('hiddenPopUp');
+        if($(popUpEl).css('display') == 'none'){
+            $(popUpEl).css('display', 'block');
+            return;
+        }
+        $(popUpEl).css('display', 'none');
     });
 
-    // $(hideEl).click(function(){
-    //     $(popUpEl).addClass('hiddenPopUp');
-    // });
-
-//??Close PopUp when user clicked on not PopUp
-    // $(document).on('click', function(e){
-    //     console.log(!$(popUpEl).hasClass("hiddenPopUp"));
-    //     if(!($(popUpEl).hasClass('hiddenPopUp'))){
-
-    //         if($(e.target).closest(popUpEl).length === 0) {
-    //         $(popUpEl).addClass('hiddenPopUp');
-    //         }
-    //     }
-    // });
+    $(hideEl).click(function(){
+        $(popUpEl).css('display', 'none');
+    });
 }
+
+
 
 
 ////Adding to list
